@@ -1,0 +1,45 @@
+{
+  "name": "same_HumanTonsil_10x_to_AddOns",
+  "sources": [
+    "HumanTonsil_10x"
+  ],
+  "targets": [
+    "HumanTonsil_AddOns_S1"
+  ],
+  "genes": 9384,
+  "proteins": 31,
+  "best_epoch": 100,
+  "best_source_validation_pcc_pro_mean": 0.6865594236409384,
+  "target_metrics": {
+    "HumanTonsil_AddOns_S1": {
+      "rmse_global": 0.23278415171983655,
+      "mae_global": 0.15352976574405613,
+      "rmse_pro_mean": 0.20726307487320836,
+      "rmse_pro_median": 0.18603471938644398,
+      "mae_pro_mean": 0.15352976574405613,
+      "mae_pro_median": 0.1438202644425903,
+      "pcc_pro_mean": 0.5787939639908275,
+      "pcc_pro_median": 0.626128233700367,
+      "pcc_pro_std": 0.21498974714590044,
+      "pcc_spot_mean": 0.7127099987184027,
+      "pcc_spot_median": 0.7521815880974879,
+      "pcc_spot_std": 0.16982366988542413,
+      "sp_pro_mean": 0.5512732442586123,
+      "sp_pro_median": 0.580114150161188,
+      "sp_pro_std": 0.2126996178888781,
+      "n_spots": 4311,
+      "n_proteins": 31
+    }
+  },
+  "official_parameters": {
+    "lambda_pred": 8.0,
+    "lambda_rna": 1.0,
+    "hidden_dim": 1024,
+    "dropout_rate": 0.3,
+    "epochs": 100,
+    "lr_scale": 1.0,
+    "seed": 0
+  },
+  "device": "cuda",
+  "selection_metric": "source_validation_pcc_pro_mean"
+}

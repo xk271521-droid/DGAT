@@ -1,0 +1,64 @@
+{
+  "name": "same_HumanTonsil_AddOns_to_10x",
+  "sources": [
+    "HumanTonsil_AddOns_S1"
+  ],
+  "targets": [
+    "HumanTonsil_10x"
+  ],
+  "genes": 9384,
+  "proteins": [
+    "ACTA2",
+    "BCL2",
+    "CCR7",
+    "CD14",
+    "CD163",
+    "CD19",
+    "CD27",
+    "CD274",
+    "CD3E",
+    "CD4",
+    "CD40",
+    "CD68",
+    "CD8A",
+    "CEACAM8",
+    "CR2",
+    "CXCR5",
+    "EPCAM",
+    "FCGR3A",
+    "HLA_DRA",
+    "ITGAM",
+    "ITGAX",
+    "KRT5",
+    "MS4A1",
+    "PAX5",
+    "PCNA",
+    "PDCD1",
+    "PECAM1",
+    "PTPRC_1",
+    "PTPRC_2",
+    "SDC1",
+    "VIM"
+  ],
+  "best_epoch": 100,
+  "best_source_validation_pcc_pro": 0.6840454407276646,
+  "target_metrics": {
+    "HumanTonsil_10x": {
+      "pcc_pro": 0.5170838996888169,
+      "rmse_global": 0.25809112191200256,
+      "n_valid_proteins": 31
+    }
+  },
+  "official_parameters": {
+    "alpha": 5.0,
+    "beta": 1.0,
+    "gamma": 1.0,
+    "delta": 3.0,
+    "epsilon": 5.0,
+    "hidden_dim": 1024,
+    "dropout": 0.3,
+    "epochs": 100,
+    "seed": 0
+  },
+  "device": "cuda"
+}

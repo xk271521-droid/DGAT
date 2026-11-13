@@ -1,0 +1,23 @@
+{
+  "test_name": "PBC_PR_6835_5A",
+  "rmse_global": 0.37649654743815025,
+  "mae_global": 0.24274225123310203,
+  "rmse_pro_mean": 0.32260225386222724,
+  "rmse_pro_median": 0.2696150940165147,
+  "mae_pro_mean": 0.242742251233102,
+  "mae_pro_median": 0.20387742229809996,
+  "pcc_pro_mean": 0.26613985320525585,
+  "pcc_pro_median": 0.2640853805611056,
+  "pcc_pro_std": 0.20274737069886864,
+  "pcc_spot_mean": 0.2713543447413408,
+  "pcc_spot_median": 0.2733917614029551,
+  "pcc_spot_std": 0.24706393482421837,
+  "sp_pro_mean": 0.24055892015965677,
+  "sp_pro_median": 0.20249242616493066,
+  "sp_pro_std": 0.19258322950843226,
+  "n_spots": 3243,
+  "n_proteins": 31,
+  "direction": "cross_holdout_Breast_Cancer",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 90
+}

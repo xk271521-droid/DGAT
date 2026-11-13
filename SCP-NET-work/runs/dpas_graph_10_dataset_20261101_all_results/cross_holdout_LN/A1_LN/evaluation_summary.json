@@ -1,0 +1,23 @@
+{
+  "test_name": "A1_LN",
+  "rmse_global": 0.36663144253358887,
+  "mae_global": 0.23415331702246264,
+  "rmse_pro_mean": 0.30426403194108853,
+  "rmse_pro_median": 0.23972822743359926,
+  "mae_pro_mean": 0.23415331702246267,
+  "mae_pro_median": 0.17680019906795824,
+  "pcc_pro_mean": 0.29812101962223403,
+  "pcc_pro_median": 0.2881107526030208,
+  "pcc_pro_std": 0.233855563845651,
+  "pcc_spot_mean": 0.3044753747562542,
+  "pcc_spot_median": 0.3541230676550291,
+  "pcc_spot_std": 0.3192693475587467,
+  "sp_pro_mean": 0.26986581707183666,
+  "sp_pro_median": 0.25311549099972835,
+  "sp_pro_std": 0.22569120980779034,
+  "n_spots": 3293,
+  "n_proteins": 31,
+  "direction": "cross_holdout_LN",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 92
+}

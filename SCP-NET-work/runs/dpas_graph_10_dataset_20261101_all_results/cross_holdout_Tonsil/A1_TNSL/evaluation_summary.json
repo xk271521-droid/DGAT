@@ -1,0 +1,23 @@
+{
+  "test_name": "A1_TNSL",
+  "rmse_global": 0.3678050052350297,
+  "mae_global": 0.2412999605965308,
+  "rmse_pro_mean": 0.30882324813324646,
+  "rmse_pro_median": 0.25857814400119844,
+  "mae_pro_mean": 0.24129996059653078,
+  "mae_pro_median": 0.19948688481048718,
+  "pcc_pro_mean": 0.4426488616916585,
+  "pcc_pro_median": 0.4522386870876165,
+  "pcc_pro_std": 0.2249020390543406,
+  "pcc_spot_mean": 0.47438823991313683,
+  "pcc_spot_median": 0.5188069223104397,
+  "pcc_spot_std": 0.25908351931965257,
+  "sp_pro_mean": 0.40588241187050383,
+  "sp_pro_median": 0.3773183112825001,
+  "sp_pro_std": 0.22758380134632625,
+  "n_spots": 4323,
+  "n_proteins": 31,
+  "direction": "cross_holdout_Tonsil",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 64
+}

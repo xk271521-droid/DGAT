@@ -1,0 +1,23 @@
+{
+  "test_name": "PBC_PR_6835_5A",
+  "rmse_global": 0.34040206774164783,
+  "mae_global": 0.21354016141528862,
+  "rmse_pro_mean": 0.29002988486883613,
+  "rmse_pro_median": 0.23757682782139689,
+  "mae_pro_mean": 0.2135401614152886,
+  "mae_pro_median": 0.1827434110298702,
+  "pcc_pro_mean": 0.3091151888598226,
+  "pcc_pro_median": 0.23533854809384497,
+  "pcc_pro_std": 0.19705393046530034,
+  "pcc_spot_mean": 0.4089292063038496,
+  "pcc_spot_median": 0.43719810903125755,
+  "pcc_spot_std": 0.21665155039149467,
+  "sp_pro_mean": 0.2958059667610585,
+  "sp_pro_median": 0.25437925148356555,
+  "sp_pro_std": 0.19318680273391714,
+  "n_spots": 3243,
+  "n_proteins": 31,
+  "direction": "same_PBC_6837_to_6835",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 100
+}

@@ -1,0 +1,45 @@
+{
+  "name": "same_TNSL_D1_to_A1",
+  "sources": [
+    "D1_TNSL"
+  ],
+  "targets": [
+    "A1_TNSL"
+  ],
+  "genes": 9384,
+  "proteins": 31,
+  "best_epoch": 100,
+  "best_source_validation_pcc_pro_mean": 0.4826678103438798,
+  "target_metrics": {
+    "A1_TNSL": {
+      "rmse_global": 0.2811633788195994,
+      "mae_global": 0.16767448189025952,
+      "rmse_pro_mean": 0.21955790972036185,
+      "rmse_pro_median": 0.17599317443466345,
+      "mae_pro_mean": 0.16767448189025952,
+      "mae_pro_median": 0.1325179750176042,
+      "pcc_pro_mean": 0.5469940457298288,
+      "pcc_pro_median": 0.5508463526716117,
+      "pcc_pro_std": 0.2286705841914252,
+      "pcc_spot_mean": 0.6224266266921977,
+      "pcc_spot_median": 0.7112817466384491,
+      "pcc_spot_std": 0.2947243851561962,
+      "sp_pro_mean": 0.5075076541610056,
+      "sp_pro_median": 0.5003256006447419,
+      "sp_pro_std": 0.22827313938928656,
+      "n_spots": 4323,
+      "n_proteins": 31
+    }
+  },
+  "official_parameters": {
+    "lambda_pred": 8.0,
+    "lambda_rna": 1.0,
+    "hidden_dim": 1024,
+    "dropout_rate": 0.3,
+    "epochs": 100,
+    "lr_scale": 1.0,
+    "seed": 0
+  },
+  "device": "cuda",
+  "selection_metric": "source_validation_pcc_pro_mean"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-03",
+  "source_workbook": "C:/Users/xk2714/Desktop/five_model_comparison_20261103.xlsx",
+  "output_workbook": "comparison/six_model_comparison_20261103.xlsx",
+  "models": [
+    "ProteinConvex + Strict RNA",
+    "ProteinConvex + Strict RNA Calibration",
+    "NicheTrans",
+    "DPAS-Graph",
+    "SPINE",
+    "DGAT"
+  ],
+  "protocol": {
+    "datasets": 10,
+    "common_rna_genes": 9384,
+    "common_adt_proteins": 31,
+    "same_tissue_targets": 8,
+    "cross_tissue_groups": 4,
+    "cross_tissue_targets": 10,
+    "detail_rows": 108
+  },
+  "calibration_results": "SCP-NET-work/runs/protein_convex_rna_calibration_10_dataset_20261103/all_directions/summary.json"
+}

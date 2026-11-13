@@ -1,0 +1,23 @@
+{
+  "test_name": "HumanTonsil_10x",
+  "rmse_global": 0.2703145337266882,
+  "mae_global": 0.18303616307079718,
+  "rmse_pro_mean": 0.24517322427068192,
+  "rmse_pro_median": 0.21909868814298947,
+  "mae_pro_mean": 0.18303616307079718,
+  "mae_pro_median": 0.17927138294746414,
+  "pcc_pro_mean": 0.4955445071967388,
+  "pcc_pro_median": 0.593413963806162,
+  "pcc_pro_std": 0.2418562316081318,
+  "pcc_spot_mean": 0.6607854635980039,
+  "pcc_spot_median": 0.7198253539244368,
+  "pcc_spot_std": 0.21007820651399337,
+  "sp_pro_mean": 0.47503648194643283,
+  "sp_pro_median": 0.5539057944106471,
+  "sp_pro_std": 0.2212952025268317,
+  "n_spots": 4191,
+  "n_proteins": 31,
+  "direction": "same_HumanTonsil_AddOns_to_10x",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 100
+}

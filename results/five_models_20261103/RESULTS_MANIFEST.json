@@ -1,0 +1,31 @@
+{
+  "整理日期": "2026-11-03",
+  "last_updated": "2026-11-03",
+  "protocol": {
+    "dataset_count": 10,
+    "common_rna_genes": 9384,
+    "common_adt_proteins": 31,
+    "same_tissue_directions": 8,
+    "cross_tissue_holdout_groups": ["LN", "Tonsil", "Breast Cancer", "GBM"],
+    "cross_tissue_targets": 10,
+    "targets_per_model": 18,
+    "detail_rows": {"same_tissue": 40, "cross_tissue": 50, "total": 90}
+  },
+  "models": ["ProteinConvex + Strict RNA Neighbor Calibration", "NicheTrans", "DPAS-Graph", "SPINE", "DGAT"],
+  "proteinconvex_calibration": {
+    "selection": "source validation only, per direction and per protein",
+    "raw_prediction_reconstruction_max_abs_diff": 9.5367431640625e-7,
+    "pcc_pro_targets_improved": 18,
+    "rmse_global_targets_improved": 18,
+    "run_root": "SCP-NET-work/runs/protein_convex_rna_calibration_10_dataset_20261103/all_directions"
+  },
+  "comparison_workbook": "comparison/five_model_comparison_20261103_rna_calibrated.xlsx",
+  "uncalibrated_baseline_workbook": "comparison/five_model_comparison_20261103.xlsx",
+  "result_roots": {
+    "ProteinConvex + Strict RNA Neighbor Calibration": "SCP-NET-work/runs/protein_convex_rna_calibration_10_dataset_20261103/all_directions",
+    "NicheTrans": ["SCP-NET-work/runs/nichetrans_10_dataset_20261101_fixed_panel", "SCP-NET-work/runs/nichetrans_10_dataset_20261102_corrected_breast_holdout"],
+    "DPAS-Graph": "SCP-NET-work/runs/dpas_graph_10_dataset_20261101_all_results",
+    "SPINE": "results/SPINE_10_dataset_20261101/analysis_ready",
+    "DGAT": "SCP-NET-work/runs/dgat_10_dataset_20261101_all_results"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "整理日期": "2026-11-03",
+  "model": "DGAT",
+  "dataset_count": 10,
+  "common_rna_genes": 9384,
+  "common_adt_proteins": 31,
+  "same_tissue_directions": 8,
+  "cross_tissue_holdout_groups": ["LN", "Tonsil", "Breast Cancer", "GBM"],
+  "direction_count": 12,
+  "target_prediction_count": 18,
+  "source": "服务器正式方向结果；Breast Cancer 使用 corrected_breast_retry_gpu2 修正版",
+  "invalid_excluded": ["原 dgat_10_dataset_20261101_server/cross_holdout_Breast_Cancer"]
+}

@@ -1,0 +1,160 @@
+{
+  "model": "SCN-Pro",
+  "target": "HumanTonsil_AddOns_S1",
+  "sources": [
+    "A1_LN",
+    "D1_LN",
+    "Breast_Cancer",
+    "PBC_PR_6837",
+    "PBC_PR_6835_5A",
+    "GBM"
+  ],
+  "seed": 42,
+  "epochs": 20,
+  "architecture": {
+    "protein_specific_router": true,
+    "protein_aware_neighbour_attention": true,
+    "protein_specific_head": "vectorized 31 independent nonlinear heads",
+    "protein_embedding_dim": 32,
+    "router_rank": 32,
+    "slice_context": true,
+    "niche_canonicalization": true,
+    "context_adapter": true,
+    "context_pca_components": 32,
+    "context_rank": 8
+  },
+  "loss": {
+    "final_mse": 1.0,
+    "protein_rmse": 0.0,
+    "protein_pcc": 0.05,
+    "auxiliary_mse": 0.25
+  },
+  "selection": "mean PCC-Pro on source-only validation spots; outer target ADT opened only after checkpoint selection",
+  "checkpoint_selection": "source_validation",
+  "preprocessing": "frozen DGAT registry; Muon CLR axis=0",
+  "common_panel": {
+    "genes": 9384,
+    "proteins": [
+      "CD163",
+      "CR2",
+      "PCNA",
+      "VIM",
+      "KRT5",
+      "CD68",
+      "CEACAM8",
+      "PTPRC_1",
+      "HLA_DRA",
+      "PAX5",
+      "SDC1",
+      "PTPRC_2",
+      "CD8A",
+      "BCL2",
+      "CD19",
+      "PDCD1",
+      "ACTA2",
+      "FCGR3A",
+      "ITGAX",
+      "CXCR5",
+      "EPCAM",
+      "MS4A1",
+      "CD3E",
+      "CD14",
+      "CD40",
+      "PECAM1",
+      "CD4",
+      "ITGAM",
+      "CD27",
+      "CCR7",
+      "CD274"
+    ]
+  },
+  "source_split": {
+    "A1_LN": {
+      "fit": 2964,
+      "validation": 329
+    },
+    "D1_LN": {
+      "fit": 2238,
+      "validation": 249
+    },
+    "Breast_Cancer": {
+      "fit": 3744,
+      "validation": 416
+    },
+    "PBC_PR_6837": {
+      "fit": 4365,
+      "validation": 485
+    },
+    "PBC_PR_6835_5A": {
+      "fit": 2919,
+      "validation": 324
+    },
+    "GBM": {
+      "fit": 5073,
+      "validation": 564
+    }
+  },
+  "audit": {
+    "A1_LN": {
+      "spots": 3293,
+      "neighbour_sha256": "1b522ec7ed3cf6ea7169911b3013edb1948bfd0bc30087c16c8b8a962e84c859",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "D1_LN": {
+      "spots": 2487,
+      "neighbour_sha256": "3d5da01b852e11cc205bd0379bc85b1c714d1eb46a93795778ee4dce0b885d47",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "Breast_Cancer": {
+      "spots": 4160,
+      "neighbour_sha256": "cfd87c1486887a4d6d16bda62598f0b31344664555c732ac9137176820431154",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "PBC_PR_6837": {
+      "spots": 4850,
+      "neighbour_sha256": "4197f18a54768a483245c72fe9cab705c98a9b7020e507289fa00e19287aa463",
+      "coordinate_scale": 199.03610229492188
+    },
+    "PBC_PR_6835_5A": {
+      "spots": 3243,
+      "neighbour_sha256": "20d5a2b3e588a81c5f0c392d4b76297bd2fbc37b00e7b9a5509d374683bbeb84",
+      "coordinate_scale": 65.86349487304688
+    },
+    "GBM": {
+      "spots": 5637,
+      "neighbour_sha256": "0f3b249466b74f96123b55816e25914ccf9fdd4faa7eaccedd69b0c360c56c46",
+      "coordinate_scale": 307.02606201171875
+    },
+    "HumanTonsil_AddOns_S1": {
+      "spots": 4311,
+      "neighbour_sha256": "fe7b9433d8fbdc7d8ff408c8da1592b50d579db5fd7e872e314794900c07248e",
+      "coordinate_scale": 366.0122985839844
+    }
+  },
+  "slice_context_audit": {
+    "source_fitted_rna_pca": true,
+    "target_protein_used_for_checkpoint_selection": false,
+    "target_full_slice_rna_used": true,
+    "canonicalization_alpha": 0.4557628929615021
+  },
+  "n_parameters": 4633306,
+  "best_epoch": 20,
+  "best_selection_pcc_pro_mean": 0.7785358371273163,
+  "best_source_validation_pcc_pro_mean": 0.7785358371273163,
+  "target_source_selected": {
+    "pcc_pro_mean": 0.6125180554245749,
+    "pcc_spot_mean": 0.659315729740168,
+    "spearman_pro_mean": 0.5688739800532685,
+    "spearman_spot_mean": 0.5998779841792051,
+    "rmse_global": 0.34904611110687256,
+    "mae_global": 0.2296699732542038
+  },
+  "target_source_selected_rmse_pro": 0.3030221611261368,
+  "wall_seconds": 1142980.562,
+  "target_source_selected_truth_file": "target_source_selected_truth.npy",
+  "target_source_selected_truth_shape": [
+    4311,
+    31
+  ],
+  "target_source_selected_truth_sha256": "320813979e37bd7c7b49d40d4c2c3816eee6b6f8ca6fdae18941d9dc2851216e"
+}

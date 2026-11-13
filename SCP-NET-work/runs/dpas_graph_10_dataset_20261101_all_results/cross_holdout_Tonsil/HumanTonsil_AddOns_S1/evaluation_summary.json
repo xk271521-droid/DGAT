@@ -1,0 +1,23 @@
+{
+  "test_name": "HumanTonsil_AddOns_S1",
+  "rmse_global": 0.31707355370041257,
+  "mae_global": 0.21307292735213118,
+  "rmse_pro_mean": 0.27617521270915,
+  "rmse_pro_median": 0.22047873141942795,
+  "mae_pro_mean": 0.21307292735213118,
+  "mae_pro_median": 0.17884504340193272,
+  "pcc_pro_mean": 0.5676422781666476,
+  "pcc_pro_median": 0.652753241659943,
+  "pcc_pro_std": 0.22886376389485394,
+  "pcc_spot_mean": 0.6115377356379524,
+  "pcc_spot_median": 0.644951715152118,
+  "pcc_spot_std": 0.17061740325176353,
+  "sp_pro_mean": 0.5379485910630466,
+  "sp_pro_median": 0.5976905043506044,
+  "sp_pro_std": 0.23374970198837286,
+  "n_spots": 4311,
+  "n_proteins": 31,
+  "direction": "cross_holdout_Tonsil",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 64
+}

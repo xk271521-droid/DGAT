@@ -1,0 +1,65 @@
+{
+  "name": "same_TNSL_A1_to_D1",
+  "sources": [
+    "A1_TNSL"
+  ],
+  "targets": [
+    "D1_TNSL"
+  ],
+  "genes": 9384,
+  "proteins": [
+    "ACTA2",
+    "BCL2",
+    "CCR7",
+    "CD14",
+    "CD163",
+    "CD19",
+    "CD27",
+    "CD274",
+    "CD3E",
+    "CD4",
+    "CD40",
+    "CD68",
+    "CD8A",
+    "CEACAM8",
+    "CR2",
+    "CXCR5",
+    "EPCAM",
+    "FCGR3A",
+    "HLA_DRA",
+    "ITGAM",
+    "ITGAX",
+    "KRT5",
+    "MS4A1",
+    "PAX5",
+    "PCNA",
+    "PDCD1",
+    "PECAM1",
+    "PTPRC_1",
+    "PTPRC_2",
+    "SDC1",
+    "VIM"
+  ],
+  "best_epoch": 22,
+  "best_source_validation_pcc_pro": 0.6126102502307584,
+  "official_parameters": {
+    "noise_rate": 0.2,
+    "dropout_rate": 0.2,
+    "epochs": 40,
+    "batch_size": 32,
+    "neighbors": 12,
+    "lr": 0.0003,
+    "weight_decay": 0.0005,
+    "seed": 1
+  },
+  "device": "cuda",
+  "target_metrics": {
+    "D1_TNSL": {
+      "pcc_pro": 0.5749241897175389,
+      "spearman_pro": 0.5145202816265747,
+      "rmse_global": 0.3261025547981262,
+      "rmse_pro": 0.2320783501190524,
+      "n_valid_proteins": 31
+    }
+  }
+}

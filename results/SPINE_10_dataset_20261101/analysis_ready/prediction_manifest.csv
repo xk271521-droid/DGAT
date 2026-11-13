@@ -1,0 +1,13 @@
+﻿experiment,prediction_files,path
+cross_holdout_Breast_Cancer,9,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\cross_holdout_Breast_Cancer
+cross_holdout_GBM,1,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\cross_holdout_GBM
+cross_holdout_LN,2,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\cross_holdout_LN
+cross_holdout_Tonsil,4,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\cross_holdout_Tonsil
+same_HumanTonsil_10x_to_AddOns,3,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_HumanTonsil_10x_to_AddOns
+same_HumanTonsil_AddOns_to_10x,3,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_HumanTonsil_AddOns_to_10x
+same_LN_A1_to_D1,3,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_LN_A1_to_D1
+same_LN_D1_to_A1,1,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_LN_D1_to_A1
+same_PBC_6835_to_6837,3,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_PBC_6835_to_6837
+same_PBC_6837_to_6835,3,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_PBC_6837_to_6835
+same_TNSL_A1_to_D1,1,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_TNSL_A1_to_D1
+same_TNSL_D1_to_A1,3,E:\DGAT\results\SPINE_10_dataset_20261101\analysis_ready\same_TNSL_D1_to_A1

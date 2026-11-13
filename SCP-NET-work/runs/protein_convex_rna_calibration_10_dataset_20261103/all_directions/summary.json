@@ -1,0 +1,2573 @@
+{
+  "candidate": "ProteinConvex + source-only RNA neighbor calibration",
+  "panel": {
+    "genes": 9384,
+    "proteins": 31
+  },
+  "selection_protocol": "per-direction source validation only; target ADT loaded after rho/lambda selection",
+  "direction_count": 18,
+  "records": [
+    {
+      "direction": "cross_holdout_Breast_Cancer_Breast_Cancer",
+      "target": "Breast_Cancer",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Breast_Cancer_Breast_Cancer\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.3,
+        "PCNA": 0.5,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.1,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.2,
+        "CD8A": 0.1,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.3,
+        "ACTA2": 0.3,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.4,
+        "CXCR5": 0.3,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.0,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.4,
+        "CD27": 0.5,
+        "CCR7": 0.1,
+        "CD274": 0.3
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.736860373583059
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7367712816265783
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7365771207949358
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7362800096274242
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7358926327453174
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.5920378469651745,
+        "pcc_spot_mean": 0.5241570083575285,
+        "spearman_pro_mean": 0.5582283039559853,
+        "spearman_spot_mean": 0.5512284291850668,
+        "rmse_global": 0.33525827527046204,
+        "mae_global": 0.21722856163978577
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.6013199737475764,
+        "pcc_spot_mean": 0.5321598647655404,
+        "spearman_pro_mean": 0.5685668792910841,
+        "spearman_spot_mean": 0.554448431134977,
+        "rmse_global": 0.32385122776031494,
+        "mae_global": 0.21416284143924713
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Breast_Cancer_Breast_Cancer\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.26998435513627145,
+      "calibrated_mae_pro": 0.21416284672675595
+    },
+    {
+      "direction": "cross_holdout_Breast_Cancer_PBC_PR_6835_5A",
+      "target": "PBC_PR_6835_5A",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Breast_Cancer_PBC_PR_6835_5A\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.3,
+        "PCNA": 0.5,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.1,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.2,
+        "CD8A": 0.1,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.3,
+        "ACTA2": 0.3,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.4,
+        "CXCR5": 0.3,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.0,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.4,
+        "CD27": 0.5,
+        "CCR7": 0.1,
+        "CD274": 0.3
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.736860373583059
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7367712816265783
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7365771207949358
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7362800096274242
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7358926327453174
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.27213333721362776,
+        "pcc_spot_mean": 0.29228924813778273,
+        "spearman_pro_mean": 0.2365397128406373,
+        "spearman_spot_mean": 0.276239395486377,
+        "rmse_global": 0.362135112285614,
+        "mae_global": 0.23479051887989044
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.27634109045949673,
+        "pcc_spot_mean": 0.31470348656981045,
+        "spearman_pro_mean": 0.24220426517513707,
+        "spearman_spot_mean": 0.2895389736931511,
+        "rmse_global": 0.3511206805706024,
+        "mae_global": 0.2287582904100418
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Breast_Cancer_PBC_PR_6835_5A\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.30468334017261384,
+      "calibrated_mae_pro": 0.22875830867598135
+    },
+    {
+      "direction": "cross_holdout_Breast_Cancer_PBC_PR_6837",
+      "target": "PBC_PR_6837",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Breast_Cancer_PBC_PR_6837\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.3,
+        "PCNA": 0.5,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.1,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.2,
+        "CD8A": 0.1,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.3,
+        "ACTA2": 0.3,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.4,
+        "CXCR5": 0.3,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.0,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.4,
+        "CD27": 0.5,
+        "CCR7": 0.1,
+        "CD274": 0.3
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.736860373583059
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7367712816265783
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7365771207949358
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7362800096274242
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7358926327453174
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 9.5367431640625e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.2437712382450099,
+        "pcc_spot_mean": 0.2124602618488722,
+        "spearman_pro_mean": 0.21473108988288886,
+        "spearman_spot_mean": 0.19665307952392927,
+        "rmse_global": 0.2897491157054901,
+        "mae_global": 0.18043352663516998
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.24778529113316308,
+        "pcc_spot_mean": 0.23073575828003368,
+        "spearman_pro_mean": 0.2178020808030172,
+        "spearman_spot_mean": 0.2031281363177394,
+        "rmse_global": 0.2709932029247284,
+        "mae_global": 0.17236009240150452
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Breast_Cancer_PBC_PR_6837\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.23207694412239135,
+      "calibrated_mae_pro": 0.17236009408389366
+    },
+    {
+      "direction": "cross_holdout_GBM",
+      "target": "GBM",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_GBM\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.4,
+        "PCNA": 0.5,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.1,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.4,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.4,
+        "CXCR5": 0.4,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.1,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.3,
+        "CD27": 0.5,
+        "CCR7": 0.2,
+        "CD274": 0.4
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7094011495545972
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7092132595253412
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7089077237105889
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7084878005723441
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7079840984245154
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.2039520374889816,
+        "pcc_spot_mean": 0.20385352374863563,
+        "spearman_pro_mean": 0.21028543691786095,
+        "spearman_spot_mean": 0.2282915538133783,
+        "rmse_global": 0.3176490366458893,
+        "mae_global": 0.20980150997638702
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.20478582592500794,
+        "pcc_spot_mean": 0.20563963233138988,
+        "spearman_pro_mean": 0.2127941207246738,
+        "spearman_spot_mean": 0.23051870561065113,
+        "rmse_global": 0.3137977123260498,
+        "mae_global": 0.20695187151432037
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_GBM\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.2779375333939829,
+      "calibrated_mae_pro": 0.20695187511944002
+    },
+    {
+      "direction": "cross_holdout_LN_A1_LN",
+      "target": "A1_LN",
+      "sources": [
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_LN_A1_LN\\best_source_validation.pth",
+      "best_epoch": 18,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.4,
+        "PCNA": 0.4,
+        "VIM": 0.4,
+        "KRT5": 0.4,
+        "CD68": 0.0,
+        "CEACAM8": 0.4,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.3,
+        "PAX5": 0.3,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.2,
+        "BCL2": 0.3,
+        "CD19": 0.5,
+        "PDCD1": 0.4,
+        "ACTA2": 0.3,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.3,
+        "CXCR5": 0.3,
+        "EPCAM": 0.4,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.2,
+        "CD27": 0.5,
+        "CCR7": 0.4,
+        "CD274": 0.3
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7314738474802798
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7313022434988092
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7310235230417559
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.730660620038977
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7302215244456692
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.3317313007409534,
+        "pcc_spot_mean": 0.37238622623375733,
+        "spearman_pro_mean": 0.2936314927499294,
+        "spearman_spot_mean": 0.3315942353672443,
+        "rmse_global": 0.3633577525615692,
+        "mae_global": 0.22233714163303375
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.34761506249947893,
+        "pcc_spot_mean": 0.42285162009789723,
+        "spearman_pro_mean": 0.30861484665515687,
+        "spearman_spot_mean": 0.3515252714085573,
+        "rmse_global": 0.3409135937690735,
+        "mae_global": 0.2141953855752945
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_LN_A1_LN\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.27971617973619894,
+      "calibrated_mae_pro": 0.2141953858156358
+    },
+    {
+      "direction": "cross_holdout_LN_D1_LN",
+      "target": "D1_LN",
+      "sources": [
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_LN_D1_LN\\best_source_validation.pth",
+      "best_epoch": 18,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.4,
+        "PCNA": 0.4,
+        "VIM": 0.4,
+        "KRT5": 0.4,
+        "CD68": 0.0,
+        "CEACAM8": 0.4,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.3,
+        "PAX5": 0.3,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.2,
+        "BCL2": 0.3,
+        "CD19": 0.5,
+        "PDCD1": 0.4,
+        "ACTA2": 0.3,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.3,
+        "CXCR5": 0.3,
+        "EPCAM": 0.4,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.2,
+        "CD27": 0.5,
+        "CCR7": 0.4,
+        "CD274": 0.3
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7314738474802798
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7313022434988092
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7310235230417559
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.730660620038977
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7302215244456692
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 4.76837158203125e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.3225443914773003,
+        "pcc_spot_mean": 0.344807144150365,
+        "spearman_pro_mean": 0.27246075700805006,
+        "spearman_spot_mean": 0.3025889814229923,
+        "rmse_global": 0.3224455714225769,
+        "mae_global": 0.19651255011558533
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.34452375156744836,
+        "pcc_spot_mean": 0.39771838725691516,
+        "spearman_pro_mean": 0.2922844951558736,
+        "spearman_spot_mean": 0.3246635139720051,
+        "rmse_global": 0.2954553961753845,
+        "mae_global": 0.18722356855869293
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_LN_D1_LN\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.24335216105945645,
+      "calibrated_mae_pro": 0.18722356952005817
+    },
+    {
+      "direction": "cross_holdout_Tonsil_A1_TNSL",
+      "target": "A1_TNSL",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_A1_TNSL\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.4,
+        "CR2": 0.5,
+        "PCNA": 0.4,
+        "VIM": 0.4,
+        "KRT5": 0.5,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.3,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7116591278441765
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7114242002364594
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7110458673526489
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7105337591844607
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7099136587313077
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.47038010928419327,
+        "pcc_spot_mean": 0.4896475701846631,
+        "spearman_pro_mean": 0.4184803280396953,
+        "spearman_spot_mean": 0.443985702776978,
+        "rmse_global": 0.36469411849975586,
+        "mae_global": 0.23504555225372314
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.4757000332878482,
+        "pcc_spot_mean": 0.49948944520363764,
+        "spearman_pro_mean": 0.4249984336799299,
+        "spearman_spot_mean": 0.45335021377388707,
+        "rmse_global": 0.3538857698440552,
+        "mae_global": 0.22762908041477203
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_A1_TNSL\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.2958953606505548,
+      "calibrated_mae_pro": 0.22762907056077833
+    },
+    {
+      "direction": "cross_holdout_Tonsil_D1_TNSL",
+      "target": "D1_TNSL",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_D1_TNSL\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.4,
+        "CR2": 0.5,
+        "PCNA": 0.4,
+        "VIM": 0.4,
+        "KRT5": 0.5,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.3,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7116591278441765
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7114242002364594
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7110458673526489
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7105337591844607
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7099136587313077
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.46275645242102686,
+        "pcc_spot_mean": 0.45641390166690543,
+        "spearman_pro_mean": 0.41541245027617146,
+        "spearman_spot_mean": 0.44045382903744346,
+        "rmse_global": 0.39795324206352234,
+        "mae_global": 0.24557900428771973
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.46828057953426916,
+        "pcc_spot_mean": 0.4648988316173997,
+        "spearman_pro_mean": 0.422570326726417,
+        "spearman_spot_mean": 0.449552356134558,
+        "rmse_global": 0.3886318504810333,
+        "mae_global": 0.2385292798280716
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_D1_TNSL\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.3082699237331267,
+      "calibrated_mae_pro": 0.23852927454056275
+    },
+    {
+      "direction": "cross_holdout_Tonsil_HumanTonsil_10x",
+      "target": "HumanTonsil_10x",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_HumanTonsil_10x\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.4,
+        "CR2": 0.5,
+        "PCNA": 0.4,
+        "VIM": 0.4,
+        "KRT5": 0.5,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.3,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7116591278441765
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7114242002364594
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7110458673526489
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7105337591844607
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7099136587313077
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.481075037571211,
+        "pcc_spot_mean": 0.566030268703868,
+        "spearman_pro_mean": 0.4288270915556037,
+        "spearman_spot_mean": 0.49607040269372416,
+        "rmse_global": 0.3835105299949646,
+        "mae_global": 0.2537776827812195
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.4849323688014861,
+        "pcc_spot_mean": 0.5656814765082008,
+        "spearman_pro_mean": 0.43375460575257896,
+        "spearman_spot_mean": 0.49855728375958414,
+        "rmse_global": 0.37016162276268005,
+        "mae_global": 0.24619168043136597
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_HumanTonsil_10x\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.321667337129193,
+      "calibrated_mae_pro": 0.24619168115238987
+    },
+    {
+      "direction": "cross_holdout_Tonsil_HumanTonsil_AddOns_S1",
+      "target": "HumanTonsil_AddOns_S1",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_HumanTonsil_AddOns_S1\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.4,
+        "CR2": 0.5,
+        "PCNA": 0.4,
+        "VIM": 0.4,
+        "KRT5": 0.5,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.3,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7116591278441765
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7114242002364594
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7110458673526489
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7105337591844607
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7099136587313077
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.612518053441759,
+        "pcc_spot_mean": 0.6593157304841891,
+        "spearman_pro_mean": 0.5688739976055159,
+        "spearman_spot_mean": 0.5998779841792051,
+        "rmse_global": 0.34904611110687256,
+        "mae_global": 0.2296699732542038
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.6171958631565494,
+        "pcc_spot_mean": 0.6592015443772433,
+        "spearman_pro_mean": 0.5749822932796336,
+        "spearman_spot_mean": 0.5996328160664703,
+        "rmse_global": 0.33515700697898865,
+        "mae_global": 0.22205115854740143
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\cross_holdout_Tonsil_HumanTonsil_AddOns_S1\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.2919999159151508,
+      "calibrated_mae_pro": 0.22205116335422762
+    },
+    {
+      "direction": "same_HumanTonsil_10x_to_AddOns",
+      "target": "HumanTonsil_AddOns_S1",
+      "sources": [
+        "HumanTonsil_10x"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_HumanTonsil_10x_to_AddOns\\best_source_validation.pth",
+      "best_epoch": 20,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.5,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.5,
+        "PCNA": 0.4,
+        "VIM": 0.5,
+        "KRT5": 0.4,
+        "CD68": 0.3,
+        "CEACAM8": 0.4,
+        "PTPRC_1": 0.3,
+        "HLA_DRA": 0.2,
+        "PAX5": 0.2,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.3,
+        "BCL2": 0.4,
+        "CD19": 0.3,
+        "PDCD1": 0.3,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.3,
+        "ITGAX": 0.3,
+        "CXCR5": 0.2,
+        "EPCAM": 0.5,
+        "MS4A1": 0.3,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.3,
+        "CD4": 0.5,
+        "ITGAM": 0.3,
+        "CD27": 0.4,
+        "CCR7": 0.3,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.910408701786867
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.9106750739657533
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.9107250227339663
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.9105638261398022
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.9102569919336941
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 9.5367431640625e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.6713888409637636,
+        "pcc_spot_mean": 0.7909429623719242,
+        "spearman_pro_mean": 0.62075481041117,
+        "spearman_spot_mean": 0.6950944895908394,
+        "rmse_global": 0.21477553248405457,
+        "mae_global": 0.14646108448505402
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.675350202187415,
+        "pcc_spot_mean": 0.7943092894169425,
+        "spearman_pro_mean": 0.6293330352609189,
+        "spearman_spot_mean": 0.6967534971802178,
+        "rmse_global": 0.20652294158935547,
+        "mae_global": 0.14269649982452393
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_HumanTonsil_10x_to_AddOns\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.18828117462896532,
+      "calibrated_mae_pro": 0.1426965003052065
+    },
+    {
+      "direction": "same_HumanTonsil_AddOns_to_10x",
+      "target": "HumanTonsil_10x",
+      "sources": [
+        "HumanTonsil_AddOns_S1"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_HumanTonsil_AddOns_to_10x\\best_source_validation.pth",
+      "best_epoch": 16,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.75,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.1,
+        "PCNA": 0.3,
+        "VIM": 0.4,
+        "KRT5": 0.3,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.4,
+        "HLA_DRA": 0.1,
+        "PAX5": 0.3,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.2,
+        "CD8A": 0.3,
+        "BCL2": 0.5,
+        "CD19": 0.0,
+        "PDCD1": 0.3,
+        "ACTA2": 0.3,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.3,
+        "CXCR5": 0.3,
+        "EPCAM": 0.1,
+        "MS4A1": 0.2,
+        "CD3E": 0.1,
+        "CD14": 0.3,
+        "CD40": 0.5,
+        "PECAM1": 0.1,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.1,
+        "CD274": 0.1
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.8582237089052844
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.8586858306259392
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.8589248670732312
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.858954468609659
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.8587848945586818
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 9.5367431640625e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.5882680810266926,
+        "pcc_spot_mean": 0.7098008122547249,
+        "spearman_pro_mean": 0.5487672091813949,
+        "spearman_spot_mean": 0.6473100511737874,
+        "rmse_global": 0.26397451758384705,
+        "mae_global": 0.1784287393093109
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.5924080583837724,
+        "pcc_spot_mean": 0.7129138402915371,
+        "spearman_pro_mean": 0.5545026491987588,
+        "spearman_spot_mean": 0.6492083472852076,
+        "rmse_global": 0.25457245111465454,
+        "mae_global": 0.17348463833332062
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_HumanTonsil_AddOns_to_10x\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.2349950058325644,
+      "calibrated_mae_pro": 0.17348464410151204
+    },
+    {
+      "direction": "same_LN_A1_to_D1",
+      "target": "D1_LN",
+      "sources": [
+        "A1_LN"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_LN_A1_to_D1\\best_source_validation.pth",
+      "best_epoch": 18,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.5,
+        "PCNA": 0.5,
+        "VIM": 0.4,
+        "KRT5": 0.5,
+        "CD68": 0.5,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.5,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.5,
+        "CD8A": 0.4,
+        "BCL2": 0.5,
+        "CD19": 0.4,
+        "PDCD1": 0.5,
+        "ACTA2": 0.4,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.4,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.3,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.5,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.6771162390749723
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.6765224342600216
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.675867199717009
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.6751603996326343
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.6743972328005641
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 4.76837158203125e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.4771586824809351,
+        "pcc_spot_mean": 0.5143898439798265,
+        "spearman_pro_mean": 0.41648409900210687,
+        "spearman_spot_mean": 0.46171078394515197,
+        "rmse_global": 0.2829478979110718,
+        "mae_global": 0.18428245186805725
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.5226684883236885,
+        "pcc_spot_mean": 0.5777883366353033,
+        "spearman_pro_mean": 0.463701469132636,
+        "spearman_spot_mean": 0.5046114242294871,
+        "rmse_global": 0.25038209557533264,
+        "mae_global": 0.16577962040901184
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_LN_A1_to_D1\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.21463761454628355,
+      "calibrated_mae_pro": 0.16577961920730527
+    },
+    {
+      "direction": "same_LN_D1_to_A1",
+      "target": "A1_LN",
+      "sources": [
+        "D1_LN"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_LN_D1_to_A1\\best_source_validation.pth",
+      "best_epoch": 15,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.75,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.3,
+        "PCNA": 0.2,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.5,
+        "CEACAM8": 0.4,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.5,
+        "PAX5": 0.3,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.3,
+        "CD8A": 0.3,
+        "BCL2": 0.3,
+        "CD19": 0.3,
+        "PDCD1": 0.4,
+        "ACTA2": 0.1,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.2,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.1,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.673750233709535
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.6738524973765991
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.6739225403688472
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.6739567185115299
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.6739555910304743
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 4.76837158203125e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.5467047914862633,
+        "pcc_spot_mean": 0.5617842525482947,
+        "spearman_pro_mean": 0.49018244667130473,
+        "spearman_spot_mean": 0.5006532246958626,
+        "rmse_global": 0.29995399713516235,
+        "mae_global": 0.18838979303836823
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.5651762014435183,
+        "pcc_spot_mean": 0.5882265305966982,
+        "spearman_pro_mean": 0.5093544869915613,
+        "spearman_spot_mean": 0.5161067270487006,
+        "rmse_global": 0.28948190808296204,
+        "mae_global": 0.18305596709251404
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_LN_D1_to_A1\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.24173641493243556,
+      "calibrated_mae_pro": 0.18305595723852033
+    },
+    {
+      "direction": "same_PBC_6835_to_6837",
+      "target": "PBC_PR_6837",
+      "sources": [
+        "PBC_PR_6835_5A"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_PBC_6835_to_6837\\best_source_validation.pth",
+      "best_epoch": 17,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.5,
+        "PCNA": 0.4,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.5,
+        "CEACAM8": 0.4,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.4,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.4,
+        "CD8A": 0.4,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.4,
+        "FCGR3A": 0.4,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.5,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.0,
+        "CD4": 0.5,
+        "ITGAM": 0.2,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.6176339093139336
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.6174407675346278
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.6169258121899373
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.616085645238273
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.614930466301873
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.3322862722280045,
+        "pcc_spot_mean": 0.34739296554213933,
+        "spearman_pro_mean": 0.2965369419502527,
+        "spearman_spot_mean": 0.3390110664758602,
+        "rmse_global": 0.2910004258155823,
+        "mae_global": 0.19333834946155548
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.3580633524745222,
+        "pcc_spot_mean": 0.3628350704836744,
+        "spearman_pro_mean": 0.31497206344577305,
+        "spearman_spot_mean": 0.35217407688728775,
+        "rmse_global": 0.2574993968009949,
+        "mae_global": 0.17252899706363678
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_PBC_6835_to_6837\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.22420238487182126,
+      "calibrated_mae_pro": 0.17252901220513925
+    },
+    {
+      "direction": "same_PBC_6837_to_6835",
+      "target": "PBC_PR_6835_5A",
+      "sources": [
+        "PBC_PR_6837"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_PBC_6837_to_6835\\best_source_validation.pth",
+      "best_epoch": 17,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.3,
+        "CR2": 0.5,
+        "PCNA": 0.5,
+        "VIM": 0.4,
+        "KRT5": 0.4,
+        "CD68": 0.2,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.3,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.5,
+        "CD8A": 0.3,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.2,
+        "FCGR3A": 0.3,
+        "ITGAX": 0.3,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.3,
+        "CD14": 0.3,
+        "CD40": 0.5,
+        "PECAM1": 0.2,
+        "CD4": 0.5,
+        "ITGAM": 0.3,
+        "CD27": 0.4,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.6738547763371963
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.6735438250431395
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.6730711322134388
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.6724578584793754
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.6717223607410354
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 4.76837158203125e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.3492270042338679,
+        "pcc_spot_mean": 0.4149133172571519,
+        "spearman_pro_mean": 0.31362682388495083,
+        "spearman_spot_mean": 0.38492633027696954,
+        "rmse_global": 0.33737054467201233,
+        "mae_global": 0.2107320874929428
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.36271043049712337,
+        "pcc_spot_mean": 0.4419794705440053,
+        "spearman_pro_mean": 0.3279717205234477,
+        "spearman_spot_mean": 0.4075946913594449,
+        "rmse_global": 0.3343551456928253,
+        "mae_global": 0.20737102627754211
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_PBC_6837_to_6835\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.2827354229746326,
+      "calibrated_mae_pro": 0.20737102916163783
+    },
+    {
+      "direction": "same_TNSL_A1_to_D1",
+      "target": "D1_TNSL",
+      "sources": [
+        "A1_TNSL"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_TNSL_A1_to_D1\\best_source_validation.pth",
+      "best_epoch": 19,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.4,
+        "CR2": 0.5,
+        "PCNA": 0.5,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.4,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.5,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.5,
+        "CD8A": 0.4,
+        "BCL2": 0.4,
+        "CD19": 0.5,
+        "PDCD1": 0.4,
+        "ACTA2": 0.5,
+        "FCGR3A": 0.4,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.5,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.3,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.7257960265217147
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.7254101560575601
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.7248291591424902
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.7240722249579034
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.7231680602155821
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.592098227191356,
+        "pcc_spot_mean": 0.6203219619972944,
+        "spearman_pro_mean": 0.5343221848068676,
+        "spearman_spot_mean": 0.6145437384099046,
+        "rmse_global": 0.3180354833602905,
+        "mae_global": 0.18028834462165833
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.6020321567212382,
+        "pcc_spot_mean": 0.6362649674217596,
+        "spearman_pro_mean": 0.5470944449014982,
+        "spearman_spot_mean": 0.6203579742337476,
+        "rmse_global": 0.3036048412322998,
+        "mae_global": 0.17453475296497345
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_TNSL_A1_to_D1\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.22232174536874216,
+      "calibrated_mae_pro": 0.1745347375831296
+    },
+    {
+      "direction": "same_TNSL_D1_to_A1",
+      "target": "A1_TNSL",
+      "sources": [
+        "D1_TNSL"
+      ],
+      "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_TNSL_D1_to_A1\\best_source_validation.pth",
+      "best_epoch": 19,
+      "source_validation_only_selection": true,
+      "target_adt_opened_after_selection": true,
+      "common_panel": {
+        "genes": 9384,
+        "proteins": [
+          "CD163",
+          "CR2",
+          "PCNA",
+          "VIM",
+          "KRT5",
+          "CD68",
+          "CEACAM8",
+          "PTPRC_1",
+          "HLA_DRA",
+          "PAX5",
+          "SDC1",
+          "PTPRC_2",
+          "CD8A",
+          "BCL2",
+          "CD19",
+          "PDCD1",
+          "ACTA2",
+          "FCGR3A",
+          "ITGAX",
+          "CXCR5",
+          "EPCAM",
+          "MS4A1",
+          "CD3E",
+          "CD14",
+          "CD40",
+          "PECAM1",
+          "CD4",
+          "ITGAM",
+          "CD27",
+          "CCR7",
+          "CD274"
+        ]
+      },
+      "rho_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "lambda_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "selected_rho": 0.0,
+      "selected_lambda_by_protein": {
+        "CD163": 0.5,
+        "CR2": 0.5,
+        "PCNA": 0.5,
+        "VIM": 0.5,
+        "KRT5": 0.5,
+        "CD68": 0.5,
+        "CEACAM8": 0.5,
+        "PTPRC_1": 0.5,
+        "HLA_DRA": 0.5,
+        "PAX5": 0.5,
+        "SDC1": 0.5,
+        "PTPRC_2": 0.5,
+        "CD8A": 0.5,
+        "BCL2": 0.5,
+        "CD19": 0.5,
+        "PDCD1": 0.5,
+        "ACTA2": 0.5,
+        "FCGR3A": 0.5,
+        "ITGAX": 0.5,
+        "CXCR5": 0.5,
+        "EPCAM": 0.5,
+        "MS4A1": 0.5,
+        "CD3E": 0.4,
+        "CD14": 0.5,
+        "CD40": 0.5,
+        "PECAM1": 0.5,
+        "CD4": 0.5,
+        "ITGAM": 0.5,
+        "CD27": 0.5,
+        "CCR7": 0.5,
+        "CD274": 0.5
+      },
+      "source_validation_macro_pcc_by_rho": [
+        {
+          "rho": 0.0,
+          "source_validation_macro_pcc": 0.683232560070098
+        },
+        {
+          "rho": 0.25,
+          "source_validation_macro_pcc": 0.6825429035425963
+        },
+        {
+          "rho": 0.5,
+          "source_validation_macro_pcc": 0.681657045863749
+        },
+        {
+          "rho": 0.75,
+          "source_validation_macro_pcc": 0.6805712266549501
+        },
+        {
+          "rho": 1.0,
+          "source_validation_macro_pcc": 0.679341389950352
+        }
+      ],
+      "baseline_reconstruction_max_abs_diff": 9.5367431640625e-07,
+      "baseline_metrics": {
+        "pcc_pro_mean": 0.5835173795780828,
+        "pcc_spot_mean": 0.6158266192471584,
+        "spearman_pro_mean": 0.5307284839248,
+        "spearman_spot_mean": 0.6206838757557007,
+        "rmse_global": 0.3241738975048065,
+        "mae_global": 0.1837792694568634
+      },
+      "calibrated_metrics": {
+        "pcc_pro_mean": 0.5942716773959899,
+        "pcc_spot_mean": 0.652797244334942,
+        "spearman_pro_mean": 0.5458407213428365,
+        "spearman_spot_mean": 0.6386185496640449,
+        "rmse_global": 0.29149553179740906,
+        "mae_global": 0.1708061397075653
+      },
+      "prediction_file": "rna_calibrated_predictions.npy",
+      "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_TNSL_D1_to_A1\\target_source_selected_truth.npy",
+      "calibrated_rmse_pro": 0.22409909771334738,
+      "calibrated_mae_pro": 0.1708061486001937
+    }
+  ]
+}

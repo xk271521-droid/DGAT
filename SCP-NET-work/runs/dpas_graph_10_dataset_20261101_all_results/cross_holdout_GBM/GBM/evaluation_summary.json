@@ -1,0 +1,23 @@
+{
+  "test_name": "GBM",
+  "rmse_global": 0.30175201070610824,
+  "mae_global": 0.19666730545311864,
+  "rmse_pro_mean": 0.2672710985702639,
+  "rmse_pro_median": 0.2561561243469605,
+  "mae_pro_mean": 0.19666730545311864,
+  "mae_pro_median": 0.18373417196617242,
+  "pcc_pro_mean": 0.24508675747921707,
+  "pcc_pro_median": 0.26350660976270046,
+  "pcc_pro_std": 0.20192937418610157,
+  "pcc_spot_mean": 0.23352675341968213,
+  "pcc_spot_median": 0.2278738863995624,
+  "pcc_spot_std": 0.22469977256238347,
+  "sp_pro_mean": 0.26212670369023106,
+  "sp_pro_median": 0.2895843186246778,
+  "sp_pro_std": 0.2108324909929129,
+  "n_spots": 5637,
+  "n_proteins": 31,
+  "direction": "cross_holdout_GBM",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 53
+}

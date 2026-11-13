@@ -1,0 +1,2 @@
+epoch,train_loss,train_final_mse,train_final_protein_rmse,train_aux_mse,train_pcc_loss,valid_proteins_per_batch,source_validation_pcc_pro_mean,source_validation_rmse_pro,selection_score,is_selected_best,target_epoch_pcc_pro_mean,target_epoch_rmse_global,target_epoch_mae_global
+1,0.23405186321054186,0.13046326509543826,0.30735929012298585,0.26017640445913587,0.7708899072238378,31.0,0.45684946304367435,0.2241015446282202,0.45684946304367435,True,0.4625333062102718,0.3235737383365631,0.21124602854251862

@@ -1,0 +1,32 @@
+{
+  "整理日期": "2026-11-03",
+  "status": "superseded_by_five_model_comparison_20261103",
+  "protocol": {
+    "dataset_count": 10,
+    "common_rna_genes": 9384,
+    "common_adt_proteins": 31,
+    "same_tissue_directions": 8,
+    "cross_tissue_holdout_groups": ["LN", "Tonsil", "Breast Cancer", "GBM"],
+    "expected_targets_per_model": 18,
+    "models": ["ProteinConvex + Strict RNA", "NicheTrans", "SPINE", "DGAT"]
+  },
+  "comparison_workbook": "comparison/four_model_comparison_20261102.xlsx",
+  "fair_comparison_status": "four_models_current_DGAT_included_DPAS-Graph_excluded_pending_corrected_breast_holdout",
+  "historical_deleted_invalid_rows": [
+    "NicheTrans/cross_holdout_Breast_Cancer/Breast_Cancer",
+    "NicheTrans/cross_holdout_Breast_Cancer/PBC_PR_6837",
+    "NicheTrans/cross_holdout_Breast_Cancer/PBC_PR_6835_5A",
+    "DPAS-Graph/cross_holdout_Breast_Cancer/Breast_Cancer",
+    "DPAS-Graph/cross_holdout_Breast_Cancer/PBC_PR_6837",
+    "DPAS-Graph/cross_holdout_Breast_Cancer/PBC_PR_6835_5A"
+  ],
+  "model_coverage": {"ProteinConvex + Strict RNA": 18, "NicheTrans": 18, "SPINE": 18, "DGAT": 18},
+  "excluded_pending_model": "DPAS-Graph",
+  "result_roots": {
+    "ProteinConvex + Strict RNA": "SCP-NET-work/runs/protein_convex_10_dataset_20261101",
+    "NicheTrans": ["SCP-NET-work/runs/nichetrans_10_dataset_20261101_fixed_panel", "SCP-NET-work/runs/nichetrans_10_dataset_20261102_corrected_breast_holdout"],
+    "SPINE": "results/SPINE_10_dataset_20261101/analysis_ready",
+    "DGAT": "SCP-NET-work/runs/dgat_10_dataset_20261101_all_results"
+  },
+  "audit": "FOUR_MODEL_FINAL_AUDIT_20261103.md"
+}

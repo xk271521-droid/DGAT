@@ -1,0 +1,19 @@
+name: st2p
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pytorch
+  - anndata
+  - h5py
+  - matplotlib
+  - pip:
+      - muon
+      - scanpy

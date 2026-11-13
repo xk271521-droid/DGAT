@@ -1,0 +1,472 @@
+{
+  "model": "SCN-Pro",
+  "target": "A1_LN",
+  "sources": [
+    "A1_TNSL",
+    "D1_TNSL",
+    "HumanTonsil_10x",
+    "HumanTonsil_AddOns_S1",
+    "Breast_Cancer",
+    "PBC_PR_6837",
+    "PBC_PR_6835_5A",
+    "GBM"
+  ],
+  "seed": 42,
+  "epochs": 20,
+  "architecture": {
+    "protein_specific_router": true,
+    "protein_aware_neighbour_attention": true,
+    "protein_specific_head": "vectorized 31 independent nonlinear heads",
+    "protein_embedding_dim": 32,
+    "router_rank": 32,
+    "slice_context": true,
+    "niche_canonicalization": true,
+    "context_adapter": true,
+    "context_pca_components": 32,
+    "context_rank": 8
+  },
+  "loss": {
+    "final_mse": 1.0,
+    "protein_rmse": 0.0,
+    "protein_pcc": 0.05,
+    "auxiliary_mse": 0.25
+  },
+  "selection": "source validation selects the formal checkpoint; target ADT is intentionally used for per-epoch oracle diagnostics",
+  "checkpoint_selection": "source_validation",
+  "preprocessing": "frozen DGAT registry; Muon CLR axis=0",
+  "common_panel": {
+    "genes": 9384,
+    "proteins": [
+      "CD163",
+      "CR2",
+      "PCNA",
+      "VIM",
+      "KRT5",
+      "CD68",
+      "CEACAM8",
+      "PTPRC_1",
+      "HLA_DRA",
+      "PAX5",
+      "SDC1",
+      "PTPRC_2",
+      "CD8A",
+      "BCL2",
+      "CD19",
+      "PDCD1",
+      "ACTA2",
+      "FCGR3A",
+      "ITGAX",
+      "CXCR5",
+      "EPCAM",
+      "MS4A1",
+      "CD3E",
+      "CD14",
+      "CD40",
+      "PECAM1",
+      "CD4",
+      "ITGAM",
+      "CD27",
+      "CCR7",
+      "CD274"
+    ]
+  },
+  "source_split": {
+    "A1_TNSL": {
+      "fit": 3891,
+      "validation": 432
+    },
+    "D1_TNSL": {
+      "fit": 4034,
+      "validation": 448
+    },
+    "HumanTonsil_10x": {
+      "fit": 3772,
+      "validation": 419
+    },
+    "HumanTonsil_AddOns_S1": {
+      "fit": 3880,
+      "validation": 431
+    },
+    "Breast_Cancer": {
+      "fit": 3744,
+      "validation": 416
+    },
+    "PBC_PR_6837": {
+      "fit": 4365,
+      "validation": 485
+    },
+    "PBC_PR_6835_5A": {
+      "fit": 2919,
+      "validation": 324
+    },
+    "GBM": {
+      "fit": 5073,
+      "validation": 564
+    }
+  },
+  "audit": {
+    "A1_TNSL": {
+      "spots": 4323,
+      "neighbour_sha256": "cb3e87ec34b215963d68d3d6bfeafe984b812349c4965dd415cb531417539bd8",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "D1_TNSL": {
+      "spots": 4482,
+      "neighbour_sha256": "1ee63240db206b804e4e320df75b2040bda1f78ea63362d0bb31c3d7cfd12162",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "HumanTonsil_10x": {
+      "spots": 4191,
+      "neighbour_sha256": "43ba942fbf1590f1af77112993ce9a51256e938bb9fb3ec4c9ff5dfdc7c7028b",
+      "coordinate_scale": 365.0013732910156
+    },
+    "HumanTonsil_AddOns_S1": {
+      "spots": 4311,
+      "neighbour_sha256": "fe7b9433d8fbdc7d8ff408c8da1592b50d579db5fd7e872e314794900c07248e",
+      "coordinate_scale": 366.0122985839844
+    },
+    "Breast_Cancer": {
+      "spots": 4160,
+      "neighbour_sha256": "cfd87c1486887a4d6d16bda62598f0b31344664555c732ac9137176820431154",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "PBC_PR_6837": {
+      "spots": 4850,
+      "neighbour_sha256": "4197f18a54768a483245c72fe9cab705c98a9b7020e507289fa00e19287aa463",
+      "coordinate_scale": 199.03610229492188
+    },
+    "PBC_PR_6835_5A": {
+      "spots": 3243,
+      "neighbour_sha256": "20d5a2b3e588a81c5f0c392d4b76297bd2fbc37b00e7b9a5509d374683bbeb84",
+      "coordinate_scale": 65.86349487304688
+    },
+    "GBM": {
+      "spots": 5637,
+      "neighbour_sha256": "0f3b249466b74f96123b55816e25914ccf9fdd4faa7eaccedd69b0c360c56c46",
+      "coordinate_scale": 307.02606201171875
+    },
+    "A1_LN": {
+      "spots": 3293,
+      "neighbour_sha256": "1b522ec7ed3cf6ea7169911b3013edb1948bfd0bc30087c16c8b8a962e84c859",
+      "coordinate_scale": 1.4142135381698608
+    }
+  },
+  "slice_context_audit": {
+    "source_fitted_rna_pca": true,
+    "target_protein_used_for_checkpoint_selection": false,
+    "target_protein_used_for_oracle_epoch_scoring": true,
+    "target_full_slice_rna_used": true,
+    "canonicalization_alpha": 0.47481435537338257
+  },
+  "n_parameters": 4633306,
+  "best_epoch": 18,
+  "best_selection_pcc_pro_mean": 0.7906632327264355,
+  "best_source_validation_pcc_pro_mean": 0.7906632327264355,
+  "target_source_selected": {
+    "pcc_pro_mean": 0.3317313036851345,
+    "pcc_spot_mean": 0.37238622741230337,
+    "spearman_pro_mean": 0.29363147809865775,
+    "spearman_spot_mean": 0.3315942353672443,
+    "rmse_global": 0.3633577525615692,
+    "mae_global": 0.22233714163303375,
+    "per_protein": [
+      {
+        "protein": "CD163",
+        "pcc": 0.059738293290138245,
+        "spearman": 0.11887847345556747,
+        "rmse": 0.1720297932624817,
+        "mae": 0.12464841455221176
+      },
+      {
+        "protein": "CR2",
+        "pcc": 0.4380670487880707,
+        "spearman": 0.13223000619359587,
+        "rmse": 0.14876672625541687,
+        "mae": 0.11047105491161346
+      },
+      {
+        "protein": "PCNA",
+        "pcc": -0.07828052341938019,
+        "spearman": -0.11423455918071018,
+        "rmse": 0.25078508257865906,
+        "mae": 0.20199966430664062
+      },
+      {
+        "protein": "VIM",
+        "pcc": 0.2902034819126129,
+        "spearman": 0.2691886929096783,
+        "rmse": 0.2470839023590088,
+        "mae": 0.18442915380001068
+      },
+      {
+        "protein": "KRT5",
+        "pcc": 0.015726391226053238,
+        "spearman": 0.0001882158362932769,
+        "rmse": 0.8710963129997253,
+        "mae": 0.7237536311149597
+      },
+      {
+        "protein": "CD68",
+        "pcc": 0.16621315479278564,
+        "spearman": 0.12294857043871661,
+        "rmse": 0.3184467852115631,
+        "mae": 0.2465500384569168
+      },
+      {
+        "protein": "CEACAM8",
+        "pcc": 0.49573013186454773,
+        "spearman": 0.33258302763566416,
+        "rmse": 0.5841143131256104,
+        "mae": 0.42077261209487915
+      },
+      {
+        "protein": "PTPRC_1",
+        "pcc": 0.45472103357315063,
+        "spearman": 0.4484444756155423,
+        "rmse": 0.1842668503522873,
+        "mae": 0.1430487185716629
+      },
+      {
+        "protein": "HLA_DRA",
+        "pcc": 0.4924466907978058,
+        "spearman": 0.4914114897219829,
+        "rmse": 0.41194865107536316,
+        "mae": 0.2892691195011139
+      },
+      {
+        "protein": "PAX5",
+        "pcc": 0.49296650290489197,
+        "spearman": 0.378806971417431,
+        "rmse": 0.33711642026901245,
+        "mae": 0.2697785496711731
+      },
+      {
+        "protein": "SDC1",
+        "pcc": -0.04863599315285683,
+        "spearman": -0.047160930407365236,
+        "rmse": 0.3032192587852478,
+        "mae": 0.23316897451877594
+      },
+      {
+        "protein": "PTPRC_2",
+        "pcc": 0.5628384351730347,
+        "spearman": 0.5813858481373584,
+        "rmse": 0.19764897227287292,
+        "mae": 0.15435807406902313
+      },
+      {
+        "protein": "CD8A",
+        "pcc": 0.6612494587898254,
+        "spearman": 0.6595729791153533,
+        "rmse": 0.2238331288099289,
+        "mae": 0.17398537695407867
+      },
+      {
+        "protein": "BCL2",
+        "pcc": 0.4559859037399292,
+        "spearman": 0.5597218568632435,
+        "rmse": 0.17935211956501007,
+        "mae": 0.1267165094614029
+      },
+      {
+        "protein": "CD19",
+        "pcc": 0.11396221816539764,
+        "spearman": 0.09679733305409184,
+        "rmse": 0.16067978739738464,
+        "mae": 0.12301866710186005
+      },
+      {
+        "protein": "PDCD1",
+        "pcc": 0.5608677268028259,
+        "spearman": 0.4914947367309472,
+        "rmse": 0.14429159462451935,
+        "mae": 0.11109178513288498
+      },
+      {
+        "protein": "ACTA2",
+        "pcc": 0.5510533452033997,
+        "spearman": 0.4027449618658807,
+        "rmse": 0.4216965138912201,
+        "mae": 0.29656755924224854
+      },
+      {
+        "protein": "FCGR3A",
+        "pcc": 0.04539542272686958,
+        "spearman": 0.04156642547800114,
+        "rmse": 1.1718791723251343,
+        "mae": 0.9578487277030945
+      },
+      {
+        "protein": "ITGAX",
+        "pcc": 0.5213963389396667,
+        "spearman": 0.47876705875672076,
+        "rmse": 0.21556523442268372,
+        "mae": 0.16910497844219208
+      },
+      {
+        "protein": "CXCR5",
+        "pcc": 0.6127126216888428,
+        "spearman": 0.5567362714302312,
+        "rmse": 0.19814710319042206,
+        "mae": 0.15286989510059357
+      },
+      {
+        "protein": "EPCAM",
+        "pcc": 0.1424325555562973,
+        "spearman": 0.041842767489617703,
+        "rmse": 0.1768748015165329,
+        "mae": 0.1301366537809372
+      },
+      {
+        "protein": "MS4A1",
+        "pcc": 0.4488864541053772,
+        "spearman": 0.33644232713461064,
+        "rmse": 0.21098613739013672,
+        "mae": 0.1617501825094223
+      },
+      {
+        "protein": "CD3E",
+        "pcc": 0.8534547090530396,
+        "spearman": 0.8311927637783608,
+        "rmse": 0.17820458114147186,
+        "mae": 0.13921774923801422
+      },
+      {
+        "protein": "CD14",
+        "pcc": 0.021465212106704712,
+        "spearman": 0.02071979568760486,
+        "rmse": 0.1639026701450348,
+        "mae": 0.12513861060142517
+      },
+      {
+        "protein": "CD40",
+        "pcc": 0.12476382404565811,
+        "spearman": 0.09139302561425196,
+        "rmse": 0.15918366611003876,
+        "mae": 0.12498988211154938
+      },
+      {
+        "protein": "PECAM1",
+        "pcc": 0.1539500206708908,
+        "spearman": 0.2616992976919571,
+        "rmse": 0.2569742202758789,
+        "mae": 0.18391528725624084
+      },
+      {
+        "protein": "CD4",
+        "pcc": 0.5170710682868958,
+        "spearman": 0.5249780530393041,
+        "rmse": 0.14237302541732788,
+        "mae": 0.11088716238737106
+      },
+      {
+        "protein": "ITGAM",
+        "pcc": 0.06498735398054123,
+        "spearman": 0.0789686518709906,
+        "rmse": 0.31615766882896423,
+        "mae": 0.2124786376953125
+      },
+      {
+        "protein": "CD27",
+        "pcc": 0.22481317818164825,
+        "spearman": 0.21063720195473443,
+        "rmse": 0.1679118424654007,
+        "mae": 0.13141658902168274
+      },
+      {
+        "protein": "CCR7",
+        "pcc": 0.6730114817619324,
+        "spearman": 0.4987158823233876,
+        "rmse": 0.15391191840171814,
+        "mae": 0.11355449259281158
+      },
+      {
+        "protein": "CD274",
+        "pcc": 0.1944768726825714,
+        "spearman": 0.20391414940534594,
+        "rmse": 0.32223743200302124,
+        "mae": 0.2455137073993683
+      }
+    ]
+  },
+  "target_source_selected_rmse_pro": 0.29002211891835733,
+  "source_validation_selected_calibrated_metrics": {
+    "pcc_pro_mean": 0.34761506249947893,
+    "pcc_spot_mean": 0.42285162009789723,
+    "spearman_pro_mean": 0.30861484665515687,
+    "spearman_spot_mean": 0.3515252714085573,
+    "rmse_global": 0.3409135937690735,
+    "mae_global": 0.2141953855752945
+  },
+  "source_validation_selected_calibration": {
+    "rho": 0.0,
+    "lambda_mean": 0.36774193548387096,
+    "source_validation_macro_pcc": 0.7314738474802798,
+    "scores_by_rho": [
+      {
+        "rho": 0.0,
+        "source_validation_macro_pcc": 0.7314738474802798
+      },
+      {
+        "rho": 0.25,
+        "source_validation_macro_pcc": 0.7313022434988092
+      },
+      {
+        "rho": 0.5,
+        "source_validation_macro_pcc": 0.7310235230417559
+      },
+      {
+        "rho": 0.75,
+        "source_validation_macro_pcc": 0.730660620038977
+      },
+      {
+        "rho": 1.0,
+        "source_validation_macro_pcc": 0.7302215244456691
+      }
+    ]
+  },
+  "test_set_oracle": {
+    "warning": "Target ADT was used after every epoch to select diagnostic checkpoints; this is not a valid formal benchmark.",
+    "best_by_metric": {
+      "pcc_pro_mean": {
+        "value": 0.359166853730717,
+        "epoch": 11
+      },
+      "rmse_global": {
+        "value": 0.33766740560531616,
+        "epoch": 2
+      },
+      "mae_global": {
+        "value": 0.2141953855752945,
+        "epoch": 18
+      }
+    },
+    "best_metrics": {
+      "pcc_pro_mean": {
+        "pcc_pro_mean": 0.359166853730717,
+        "pcc_spot_mean": 0.3992020990195517,
+        "spearman_pro_mean": 0.3090274654598092,
+        "spearman_spot_mean": 0.3568735232065612,
+        "rmse_global": 0.36017104983329773,
+        "mae_global": 0.22182820737361908
+      },
+      "rmse_global": {
+        "pcc_pro_mean": 0.3276300175536063,
+        "pcc_spot_mean": 0.4300208070999692,
+        "spearman_pro_mean": 0.27702169844847346,
+        "spearman_spot_mean": 0.33592785941565173,
+        "rmse_global": 0.33766740560531616,
+        "mae_global": 0.21720895171165466
+      },
+      "mae_global": {
+        "pcc_pro_mean": 0.34761506249947893,
+        "pcc_spot_mean": 0.42285162009789723,
+        "spearman_pro_mean": 0.30861484665515687,
+        "spearman_spot_mean": 0.3515252714085573,
+        "rmse_global": 0.3409135937690735,
+        "mae_global": 0.2141953855752945
+      }
+    }
+  },
+  "wall_seconds": 1273632.968
+}

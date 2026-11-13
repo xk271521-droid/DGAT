@@ -1,0 +1,10 @@
+# Keep large local inputs and run outputs out of any future source repository.
+data/
+artifacts/
+runs/**/checkpoints/
+runs/**/*.pth
+runs/**/*.pt
+incoming/**/*.zip
+incoming/**/*.tar*
+__pycache__/
+*.pyc

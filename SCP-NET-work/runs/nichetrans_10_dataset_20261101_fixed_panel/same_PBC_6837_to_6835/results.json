@@ -1,0 +1,65 @@
+{
+  "name": "same_PBC_6837_to_6835",
+  "sources": [
+    "PBC_PR_6837"
+  ],
+  "targets": [
+    "PBC_PR_6835_5A"
+  ],
+  "genes": 9384,
+  "proteins": [
+    "ACTA2",
+    "BCL2",
+    "CCR7",
+    "CD14",
+    "CD163",
+    "CD19",
+    "CD27",
+    "CD274",
+    "CD3E",
+    "CD4",
+    "CD40",
+    "CD68",
+    "CD8A",
+    "CEACAM8",
+    "CR2",
+    "CXCR5",
+    "EPCAM",
+    "FCGR3A",
+    "HLA_DRA",
+    "ITGAM",
+    "ITGAX",
+    "KRT5",
+    "MS4A1",
+    "PAX5",
+    "PCNA",
+    "PDCD1",
+    "PECAM1",
+    "PTPRC_1",
+    "PTPRC_2",
+    "SDC1",
+    "VIM"
+  ],
+  "best_epoch": 34,
+  "best_source_validation_pcc_pro": 0.5951234787221877,
+  "official_parameters": {
+    "noise_rate": 0.2,
+    "dropout_rate": 0.2,
+    "epochs": 40,
+    "batch_size": 32,
+    "neighbors": 12,
+    "lr": 0.0003,
+    "weight_decay": 0.0005,
+    "seed": 1
+  },
+  "device": "cuda",
+  "target_metrics": {
+    "PBC_PR_6835_5A": {
+      "pcc_pro": 0.29732354141531453,
+      "spearman_pro": 0.2583210941854564,
+      "rmse_global": 0.36325329542160034,
+      "rmse_pro": 0.3111437220246561,
+      "n_valid_proteins": 31
+    }
+  }
+}

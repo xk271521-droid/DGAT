@@ -1,0 +1,47 @@
+# Research data and generated model artifacts stay in the local workspace.
+**/data/raw/
+**/data/processed/
+**/data/external/
+**/artifacts/
+*.h5ad
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.pickle
+*.whl
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local environments, temporary files and nested repository metadata.
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+__MACOSX/
+node_modules/
+*.log
+*.pid
+*.err
+tmp/
+upstream/archives/
+upstream/download_attempts/
+git-publication/
+thread_*.txt
+
+# Authentication is supplied by Git's credential manager, never by this repo.
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+GIT_UPLOAD_RECEIPT_*.json
+.git-stage-paths

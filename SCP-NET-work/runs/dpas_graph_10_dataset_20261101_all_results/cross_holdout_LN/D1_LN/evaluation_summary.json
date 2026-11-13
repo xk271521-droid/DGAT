@@ -1,0 +1,23 @@
+{
+  "test_name": "D1_LN",
+  "rmse_global": 0.3199465510070011,
+  "mae_global": 0.2096815298085869,
+  "rmse_pro_mean": 0.2712268347525784,
+  "rmse_pro_median": 0.21910472443810727,
+  "mae_pro_mean": 0.2096815298085869,
+  "mae_pro_median": 0.17034585341948988,
+  "pcc_pro_mean": 0.2552413857568374,
+  "pcc_pro_median": 0.2432525105431071,
+  "pcc_pro_std": 0.1942099122975089,
+  "pcc_spot_mean": 0.261273815346926,
+  "pcc_spot_median": 0.29287129429090136,
+  "pcc_spot_std": 0.3186271186999273,
+  "sp_pro_mean": 0.22328213699149274,
+  "sp_pro_median": 0.22477498806140656,
+  "sp_pro_std": 0.17943274231123177,
+  "n_spots": 2487,
+  "n_proteins": 31,
+  "direction": "cross_holdout_LN",
+  "selection_metric": "source_validation_pcc_pro_mean",
+  "best_epoch": 92
+}

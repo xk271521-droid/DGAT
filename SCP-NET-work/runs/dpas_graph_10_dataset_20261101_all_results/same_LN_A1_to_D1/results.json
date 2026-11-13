@@ -1,0 +1,45 @@
+{
+  "name": "same_LN_A1_to_D1",
+  "sources": [
+    "A1_LN"
+  ],
+  "targets": [
+    "D1_LN"
+  ],
+  "genes": 9384,
+  "proteins": 31,
+  "best_epoch": 94,
+  "best_source_validation_pcc_pro_mean": 0.49435915367332023,
+  "target_metrics": {
+    "D1_LN": {
+      "rmse_global": 0.2607064965353626,
+      "mae_global": 0.17358330320383036,
+      "rmse_pro_mean": 0.22467699775277097,
+      "rmse_pro_median": 0.17300934731668838,
+      "mae_pro_mean": 0.17358330320383034,
+      "mae_pro_median": 0.13714870181688113,
+      "pcc_pro_mean": 0.4867296999514596,
+      "pcc_pro_median": 0.5139793767171146,
+      "pcc_pro_std": 0.15260952832587305,
+      "pcc_spot_mean": 0.5473378223938921,
+      "pcc_spot_median": 0.640569067672559,
+      "pcc_spot_std": 0.3299260355911825,
+      "sp_pro_mean": 0.43917041327911305,
+      "sp_pro_median": 0.4752307358509737,
+      "sp_pro_std": 0.1442926978214026,
+      "n_spots": 2487,
+      "n_proteins": 31
+    }
+  },
+  "official_parameters": {
+    "lambda_pred": 8.0,
+    "lambda_rna": 1.0,
+    "hidden_dim": 1024,
+    "dropout_rate": 0.3,
+    "epochs": 100,
+    "lr_scale": 1.0,
+    "seed": 0
+  },
+  "device": "cuda",
+  "selection_metric": "source_validation_pcc_pro_mean"
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.10279722491041161,
+    "val_pcc_pro": 0.6511150790799048,
+    "val_spearman_pro": 0.5552205867756556,
+    "val_rmse_global": 0.24548731744289398,
+    "val_rmse_pro": 0.23303202419511734,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.05111172845713178,
+    "val_pcc_pro": 0.6977806927696351,
+    "val_spearman_pro": 0.6043876217774939,
+    "val_rmse_global": 0.22548162937164307,
+    "val_rmse_pro": 0.2127481314443773,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.04665678382143938,
+    "val_pcc_pro": 0.7029967538772091,
+    "val_spearman_pro": 0.6140578112453965,
+    "val_rmse_global": 0.22787679731845856,
+    "val_rmse_pro": 0.21297568419287283,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.044526786446795426,
+    "val_pcc_pro": 0.7076468736894669,
+    "val_spearman_pro": 0.6221032161219627,
+    "val_rmse_global": 0.22558650374412537,
+    "val_rmse_pro": 0.20968502808001735,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.043707344420534325,
+    "val_pcc_pro": 0.7081230513511165,
+    "val_spearman_pro": 0.6233387792602408,
+    "val_rmse_global": 0.22010402381420135,
+    "val_rmse_pro": 0.2050730463477873,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.042481281655959616,
+    "val_pcc_pro": 0.7094737166358579,
+    "val_spearman_pro": 0.6304780715989533,
+    "val_rmse_global": 0.21478985249996185,
+    "val_rmse_pro": 0.19701880673247,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.041675068194368725,
+    "val_pcc_pro": 0.7149421611139851,
+    "val_spearman_pro": 0.6333953670333078,
+    "val_rmse_global": 0.20946891605854034,
+    "val_rmse_pro": 0.19099372120634203,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.041165898194102414,
+    "val_pcc_pro": 0.7195586225678844,
+    "val_spearman_pro": 0.6390051465170699,
+    "val_rmse_global": 0.20389477908611298,
+    "val_rmse_pro": 0.18718105770887866,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.04029634494922663,
+    "val_pcc_pro": 0.719571671178264,
+    "val_spearman_pro": 0.6420210449360577,
+    "val_rmse_global": 0.2052731066942215,
+    "val_rmse_pro": 0.18765667393322913,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.04004813573862377,
+    "val_pcc_pro": 0.7233435799998622,
+    "val_spearman_pro": 0.6466672321595434,
+    "val_rmse_global": 0.20550060272216797,
+    "val_rmse_pro": 0.18742009877197205,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.03978342372167828,
+    "val_pcc_pro": 0.7244564294815063,
+    "val_spearman_pro": 0.6500921297415947,
+    "val_rmse_global": 0.20353658497333527,
+    "val_rmse_pro": 0.18585647810851375,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.039097852450340316,
+    "val_pcc_pro": 0.7239437333999141,
+    "val_spearman_pro": 0.6500811969487702,
+    "val_rmse_global": 0.2051638960838318,
+    "val_rmse_pro": 0.18646461901164824,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.038741686287567134,
+    "val_pcc_pro": 0.7203106053413884,
+    "val_spearman_pro": 0.6406547721330709,
+    "val_rmse_global": 0.2026129961013794,
+    "val_rmse_pro": 0.18537772446870804,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.037972400511117804,
+    "val_pcc_pro": 0.729526823566806,
+    "val_spearman_pro": 0.6549164251000904,
+    "val_rmse_global": 0.20105545222759247,
+    "val_rmse_pro": 0.183536397833978,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.03800030681479694,
+    "val_pcc_pro": 0.7258614551636481,
+    "val_spearman_pro": 0.6518111906241493,
+    "val_rmse_global": 0.20076346397399902,
+    "val_rmse_pro": 0.18376206438387593,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.03717442054609607,
+    "val_pcc_pro": 0.7275217867666676,
+    "val_spearman_pro": 0.6546160287237405,
+    "val_rmse_global": 0.2010272890329361,
+    "val_rmse_pro": 0.1836681543819366,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.03741012885606378,
+    "val_pcc_pro": 0.7247438786491271,
+    "val_spearman_pro": 0.6509812186918893,
+    "val_rmse_global": 0.203232541680336,
+    "val_rmse_pro": 0.18555751106431406,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.036946686430084974,
+    "val_pcc_pro": 0.7281619752607038,
+    "val_spearman_pro": 0.6551036620188244,
+    "val_rmse_global": 0.20068581402301788,
+    "val_rmse_pro": 0.18415220394249884,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.036792366187039176,
+    "val_pcc_pro": 0.7252928605002742,
+    "val_spearman_pro": 0.6543769774055248,
+    "val_rmse_global": 0.202723428606987,
+    "val_rmse_pro": 0.18528544686494336,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.03634502263109487,
+    "val_pcc_pro": 0.7189659293620817,
+    "val_spearman_pro": 0.6478698142256221,
+    "val_rmse_global": 0.20292194187641144,
+    "val_rmse_pro": 0.18561357500091677,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 21,
+    "train_loss": 0.03647362767977822,
+    "val_pcc_pro": 0.7330403654806076,
+    "val_spearman_pro": 0.6615462672226841,
+    "val_rmse_global": 0.19925156235694885,
+    "val_rmse_pro": 0.18186364202730118,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 22,
+    "train_loss": 0.036132671020196794,
+    "val_pcc_pro": 0.7243026418070639,
+    "val_spearman_pro": 0.6501674139887316,
+    "val_rmse_global": 0.2032800018787384,
+    "val_rmse_pro": 0.18539131240498635,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 23,
+    "train_loss": 0.036105636899408544,
+    "val_pcc_pro": 0.7311116976122702,
+    "val_spearman_pro": 0.6598870965514175,
+    "val_rmse_global": 0.19914615154266357,
+    "val_rmse_pro": 0.18250757167416234,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 24,
+    "train_loss": 0.036147215584279004,
+    "val_pcc_pro": 0.7290470898151398,
+    "val_spearman_pro": 0.6586345622869978,
+    "val_rmse_global": 0.2001146674156189,
+    "val_rmse_pro": 0.18372110181277798,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 25,
+    "train_loss": 0.035883287760548124,
+    "val_pcc_pro": 0.7342015081836332,
+    "val_spearman_pro": 0.6629376001077856,
+    "val_rmse_global": 0.1989416480064392,
+    "val_rmse_pro": 0.1824289654051104,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 26,
+    "train_loss": 0.03589427766383142,
+    "val_pcc_pro": 0.7263177296807689,
+    "val_spearman_pro": 0.6570554168668384,
+    "val_rmse_global": 0.20293046534061432,
+    "val_rmse_pro": 0.1849876022146594,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 27,
+    "train_loss": 0.03561127871499026,
+    "val_pcc_pro": 0.7320740963182142,
+    "val_spearman_pro": 0.6643948711194451,
+    "val_rmse_global": 0.1993117332458496,
+    "val_rmse_pro": 0.18224073177383793,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 28,
+    "train_loss": 0.03584639675971261,
+    "val_pcc_pro": 0.7299685641642539,
+    "val_spearman_pro": 0.660148060133883,
+    "val_rmse_global": 0.202407106757164,
+    "val_rmse_pro": 0.18384219513785455,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 29,
+    "train_loss": 0.0354044728597304,
+    "val_pcc_pro": 0.7273591391501888,
+    "val_spearman_pro": 0.6534377223260638,
+    "val_rmse_global": 0.20064608752727509,
+    "val_rmse_pro": 0.18355430614563725,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 30,
+    "train_loss": 0.03554971029043646,
+    "val_pcc_pro": 0.7310922357343859,
+    "val_spearman_pro": 0.6611297364432203,
+    "val_rmse_global": 0.2005128413438797,
+    "val_rmse_pro": 0.18342973339942195,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 31,
+    "train_loss": 0.0353005427503048,
+    "val_pcc_pro": 0.7341300652873132,
+    "val_spearman_pro": 0.6618065600184054,
+    "val_rmse_global": 0.1989474594593048,
+    "val_rmse_pro": 0.1818827782427111,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 32,
+    "train_loss": 0.035407660254522376,
+    "val_pcc_pro": 0.7315064485996,
+    "val_spearman_pro": 0.6615081152301906,
+    "val_rmse_global": 0.20057155191898346,
+    "val_rmse_pro": 0.18301493001561012,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 33,
+    "train_loss": 0.03522288965383419,
+    "val_pcc_pro": 0.733346410336033,
+    "val_spearman_pro": 0.6627740468045616,
+    "val_rmse_global": 0.20077449083328247,
+    "val_rmse_pro": 0.18343034290498303,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 34,
+    "train_loss": 0.035488189804486765,
+    "val_pcc_pro": 0.7342276246316971,
+    "val_spearman_pro": 0.6628176396925285,
+    "val_rmse_global": 0.20083968341350555,
+    "val_rmse_pro": 0.18302337681093522,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 35,
+    "train_loss": 0.03526760461859237,
+    "val_pcc_pro": 0.7341114532562995,
+    "val_spearman_pro": 0.6638748522297312,
+    "val_rmse_global": 0.19912466406822205,
+    "val_rmse_pro": 0.1815596434377855,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 36,
+    "train_loss": 0.035472658142111355,
+    "val_pcc_pro": 0.734426619545106,
+    "val_spearman_pro": 0.6677785435970014,
+    "val_rmse_global": 0.1991533786058426,
+    "val_rmse_pro": 0.18178375978623668,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 37,
+    "train_loss": 0.035232811213884135,
+    "val_pcc_pro": 0.7296307346513194,
+    "val_spearman_pro": 0.6595649609797607,
+    "val_rmse_global": 0.20728588104248047,
+    "val_rmse_pro": 0.1871839790574966,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 38,
+    "train_loss": 0.03536048337144959,
+    "val_pcc_pro": 0.7331858719548872,
+    "val_spearman_pro": 0.6622149975059636,
+    "val_rmse_global": 0.20045319199562073,
+    "val_rmse_pro": 0.1821842830507986,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 39,
+    "train_loss": 0.035336757868640406,
+    "val_pcc_pro": 0.7321220001866741,
+    "val_spearman_pro": 0.6645433445963063,
+    "val_rmse_global": 0.2064378559589386,
+    "val_rmse_pro": 0.18614805585915042,
+    "val_n_valid_proteins": 31
+  },
+  {
+    "epoch": 40,
+    "train_loss": 0.03512363416471876,
+    "val_pcc_pro": 0.7326531525581114,
+    "val_spearman_pro": 0.6579763911667594,
+    "val_rmse_global": 0.20203199982643127,
+    "val_rmse_pro": 0.1840550764914482,
+    "val_n_valid_proteins": 31
+  }
+]

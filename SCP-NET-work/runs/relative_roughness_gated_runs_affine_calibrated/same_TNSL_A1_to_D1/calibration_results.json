@@ -1,0 +1,141 @@
+{
+  "direction": "same_TNSL_A1_to_D1",
+  "target": "D1_TNSL",
+  "sources": [
+    "A1_TNSL"
+  ],
+  "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\relative_roughness_gated_runs\\same_TNSL_A1_to_D1\\best_source_validation.pth",
+  "best_epoch": 19,
+  "source_validation_only_selection": true,
+  "target_adt_opened_after_selection": true,
+  "common_panel": {
+    "genes": 9384,
+    "proteins": [
+      "CD163",
+      "CR2",
+      "PCNA",
+      "VIM",
+      "KRT5",
+      "CD68",
+      "CEACAM8",
+      "PTPRC_1",
+      "HLA_DRA",
+      "PAX5",
+      "SDC1",
+      "PTPRC_2",
+      "CD8A",
+      "BCL2",
+      "CD19",
+      "PDCD1",
+      "ACTA2",
+      "FCGR3A",
+      "ITGAX",
+      "CXCR5",
+      "EPCAM",
+      "MS4A1",
+      "CD3E",
+      "CD14",
+      "CD40",
+      "PECAM1",
+      "CD4",
+      "ITGAM",
+      "CD27",
+      "CCR7",
+      "CD274"
+    ]
+  },
+  "rho_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "lambda_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "selected_rho": 0.0,
+  "selected_lambda_by_protein": {
+    "CD163": 0.4,
+    "CR2": 0.5,
+    "PCNA": 0.5,
+    "VIM": 0.5,
+    "KRT5": 0.5,
+    "CD68": 0.4,
+    "CEACAM8": 0.5,
+    "PTPRC_1": 0.5,
+    "HLA_DRA": 0.5,
+    "PAX5": 0.5,
+    "SDC1": 0.5,
+    "PTPRC_2": 0.5,
+    "CD8A": 0.4,
+    "BCL2": 0.4,
+    "CD19": 0.5,
+    "PDCD1": 0.4,
+    "ACTA2": 0.5,
+    "FCGR3A": 0.4,
+    "ITGAX": 0.5,
+    "CXCR5": 0.5,
+    "EPCAM": 0.5,
+    "MS4A1": 0.5,
+    "CD3E": 0.5,
+    "CD14": 0.5,
+    "CD40": 0.5,
+    "PECAM1": 0.3,
+    "CD4": 0.5,
+    "ITGAM": 0.5,
+    "CD27": 0.5,
+    "CCR7": 0.5,
+    "CD274": 0.5
+  },
+  "source_validation_macro_pcc_by_rho": [
+    {
+      "rho": 0.0,
+      "source_validation_macro_pcc": 0.7257960265217147
+    },
+    {
+      "rho": 0.25,
+      "source_validation_macro_pcc": 0.7254101560575601
+    },
+    {
+      "rho": 0.5,
+      "source_validation_macro_pcc": 0.7248291591424902
+    },
+    {
+      "rho": 0.75,
+      "source_validation_macro_pcc": 0.7240722249579034
+    },
+    {
+      "rho": 1.0,
+      "source_validation_macro_pcc": 0.7231680602155821
+    }
+  ],
+  "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+  "baseline_metrics": {
+    "pcc_pro_mean": 0.592098227191356,
+    "pcc_spot_mean": 0.6203219619972944,
+    "spearman_pro_mean": 0.5343221848068676,
+    "spearman_spot_mean": 0.6145437384099046,
+    "rmse_global": 0.3180354833602905,
+    "mae_global": 0.18028834462165833
+  },
+  "calibrated_metrics": {
+    "pcc_pro_mean": 0.6020321586439686,
+    "pcc_spot_mean": 0.6451518102592393,
+    "spearman_pro_mean": 0.5470944383625411,
+    "spearman_spot_mean": 0.6236021607020615,
+    "rmse_global": 0.29296183586120605,
+    "mae_global": 0.16847111284732819
+  },
+  "baseline_rmse_pro": 0.23176813894702541,
+  "baseline_mae_pro": 0.18028835735974774,
+  "calibrated_rmse_pro": 0.21304791348595772,
+  "calibrated_mae_pro": 0.16847111380869342,
+  "prediction_file": "rna_calibrated_predictions.npy",
+  "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\relative_roughness_gated_runs\\same_TNSL_A1_to_D1\\target_source_selected_truth.npy"
+}

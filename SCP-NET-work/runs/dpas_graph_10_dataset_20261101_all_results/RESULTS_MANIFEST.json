@@ -1,0 +1,79 @@
+{
+  "directions": 12,
+  "prediction_files": 18,
+  "truth_files": 18,
+  "rows": [
+    {
+      "direction": "cross_holdout_Breast_Cancer",
+      "prediction_files": 3,
+      "truth_files": 3,
+      "results_json": true
+    },
+    {
+      "direction": "cross_holdout_GBM",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "cross_holdout_LN",
+      "prediction_files": 2,
+      "truth_files": 2,
+      "results_json": true
+    },
+    {
+      "direction": "cross_holdout_Tonsil",
+      "prediction_files": 4,
+      "truth_files": 4,
+      "results_json": true
+    },
+    {
+      "direction": "same_HumanTonsil_10x_to_AddOns",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_HumanTonsil_AddOns_to_10x",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_LN_A1_to_D1",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_LN_D1_to_A1",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_PBC_6835_to_6837",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_PBC_6837_to_6835",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_TNSL_A1_to_D1",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    },
+    {
+      "direction": "same_TNSL_D1_to_A1",
+      "prediction_files": 1,
+      "truth_files": 1,
+      "results_json": true
+    }
+  ]
+}

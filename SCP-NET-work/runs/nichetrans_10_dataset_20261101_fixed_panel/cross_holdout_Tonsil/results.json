@@ -1,0 +1,94 @@
+{
+  "name": "cross_holdout_Tonsil",
+  "sources": [
+    "A1_LN",
+    "D1_LN",
+    "Breast_Cancer",
+    "PBC_PR_6837",
+    "PBC_PR_6835_5A",
+    "GBM"
+  ],
+  "targets": [
+    "A1_TNSL",
+    "D1_TNSL",
+    "HumanTonsil_10x",
+    "HumanTonsil_AddOns_S1"
+  ],
+  "genes": 9384,
+  "proteins": [
+    "ACTA2",
+    "BCL2",
+    "CCR7",
+    "CD14",
+    "CD163",
+    "CD19",
+    "CD27",
+    "CD274",
+    "CD3E",
+    "CD4",
+    "CD40",
+    "CD68",
+    "CD8A",
+    "CEACAM8",
+    "CR2",
+    "CXCR5",
+    "EPCAM",
+    "FCGR3A",
+    "HLA_DRA",
+    "ITGAM",
+    "ITGAX",
+    "KRT5",
+    "MS4A1",
+    "PAX5",
+    "PCNA",
+    "PDCD1",
+    "PECAM1",
+    "PTPRC_1",
+    "PTPRC_2",
+    "SDC1",
+    "VIM"
+  ],
+  "best_epoch": 36,
+  "best_source_validation_pcc_pro": 0.734426619545106,
+  "official_parameters": {
+    "noise_rate": 0.2,
+    "dropout_rate": 0.2,
+    "epochs": 40,
+    "batch_size": 32,
+    "neighbors": 12,
+    "lr": 0.0003,
+    "weight_decay": 0.0005,
+    "seed": 1
+  },
+  "device": "cuda",
+  "target_metrics": {
+    "A1_TNSL": {
+      "pcc_pro": 0.4275378314402675,
+      "spearman_pro": 0.3754326472586268,
+      "rmse_global": 0.34208038449287415,
+      "rmse_pro": 0.27684433902463607,
+      "n_valid_proteins": 31
+    },
+    "D1_TNSL": {
+      "pcc_pro": 0.4252636467196768,
+      "spearman_pro": 0.37904284453833104,
+      "rmse_global": 0.3837355673313141,
+      "rmse_pro": 0.29175522971537804,
+      "n_valid_proteins": 31
+    },
+    "HumanTonsil_10x": {
+      "pcc_pro": 0.45144657165773455,
+      "spearman_pro": 0.40144040795533453,
+      "rmse_global": 0.3464590013027191,
+      "rmse_pro": 0.3012804465909158,
+      "n_valid_proteins": 31
+    },
+    "HumanTonsil_AddOns_S1": {
+      "pcc_pro": 0.5488575216262571,
+      "spearman_pro": 0.5040857800069085,
+      "rmse_global": 0.3111376464366913,
+      "rmse_pro": 0.2691010777508059,
+      "n_valid_proteins": 31
+    }
+  }
+}

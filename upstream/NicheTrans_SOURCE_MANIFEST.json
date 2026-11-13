@@ -1,0 +1,328 @@
+{
+  "repository": "https://github.com/YSTLab/NicheTrans",
+  "commit": "85fab4722f9b16cdef8b23f5a9ace0c15980ca16",
+  "ref": "main at 2026-10-30",
+  "download_method": "official raw.githubusercontent.com files at pinned commit; Git clone and codeload archive were unavailable due connection stalls/resets",
+  "file_count": 53,
+  "total_bytes": 9647003,
+  "files": [
+    {
+      "path": "1_Data_preparation/SMA/Tutorial_1__Data_pre-processing_for_SMA_data.ipynb",
+      "size": 1224529,
+      "git_blob_sha1": "9b5c8e0c34e4f0e8f57cd50cdc46ed21f5edf23c",
+      "sha256": "15271c6971ea30100ade907ad229d14df92075d1eb56a8219ef2e8cbc2a52014"
+    },
+    {
+      "path": "1_Data_preparation/STARmap_PLUS/Tutorial_2__Data_pre-processing_for_STARmap_PLUS_data.ipynb",
+      "size": 1228919,
+      "git_blob_sha1": "8e32d50a1e72154d7e6bc78616a241eb602ace73",
+      "sha256": "2d65a1aba1d8d4399aedbb7badb8d09506d4872dc0b0c536c5a0ac2ef8171f40"
+    },
+    {
+      "path": "args/args_breast_cancer.py",
+      "size": 2321,
+      "git_blob_sha1": "5a80ec011e1f35a1d35fcfd11fb93bb52bd4733c",
+      "sha256": "c1aa5ee44128532158b3f6a60d1ffb7bfcbb6713d9e1d86d05f502110498430d"
+    },
+    {
+      "path": "args/args_human_lymph_node.py",
+      "size": 2141,
+      "git_blob_sha1": "819869fc475ddcb4d34862bca03aae07f46b2fef",
+      "sha256": "b1c639987ff4d3e02e0e0ee1ccae6f6e21253d1a24dbae62c7ce915dbdd4ee33"
+    },
+    {
+      "path": "args/args_MISAR_seq.py",
+      "size": 2337,
+      "git_blob_sha1": "9286e252ac7462a1c5c967c6259fa3e9e456851d",
+      "sha256": "7bf922ea85089adf4a212e5c168d8b2617b90a1bb037924ae4a1e54a77801814"
+    },
+    {
+      "path": "args/args_SMA.py",
+      "size": 2644,
+      "git_blob_sha1": "e0926699fcb173d23de613b7e7b995ec2e157ffa",
+      "sha256": "3c6fe3132a5419392a1e1144ac1438a5003f1f3fdcf05b9ad9f49447afff1d40"
+    },
+    {
+      "path": "args/args_STARmap_PLUS.py",
+      "size": 2297,
+      "git_blob_sha1": "32a6200d9c46cdc5535564128b2b6360316aebcd",
+      "sha256": "54c767f63bbc86c70f2f6b438bdea43aefd7c3b3d5f32dffbb504a7018192005"
+    },
+    {
+      "path": "codes_figures.txt",
+      "size": 1818,
+      "git_blob_sha1": "13f94145706a1d2d215c0956148660ac1439d668",
+      "sha256": "8e9a508c06e9a30709aab3de08f320921e425afd784a2bbb768076e044c45024"
+    },
+    {
+      "path": "datasets/data_loader.py",
+      "size": 3232,
+      "git_blob_sha1": "44656c686dba5aff42d831af611961210efc8226",
+      "sha256": "6f8bb079f5cbc09d7aafe7f1cc8db02a4a8f01a6b9b4b7dff2fddde23e3d0571"
+    },
+    {
+      "path": "datasets/data_manager_breast_cancer.py",
+      "size": 5902,
+      "git_blob_sha1": "e8d3df50677fe5b8975adac88d9958dae5f042aa",
+      "sha256": "aa476051cd0562ec67a8536b79a276b5e2b0d70d75bf1fbe3c10f5a0b4dd3da6"
+    },
+    {
+      "path": "datasets/data_manager_human_lymph_node.py",
+      "size": 8573,
+      "git_blob_sha1": "2b92e3c0a04778f86f9b6e67f26ba28c618cbfb2",
+      "sha256": "05ada1215598c24a827e4e75638f8eccef47ec57a279ee8a3c8a105da94006db"
+    },
+    {
+      "path": "datasets/data_manager_MISAR_seq.py",
+      "size": 9135,
+      "git_blob_sha1": "4e6e8bda0d4e88347db7ef6bf02aa3146a863d2b",
+      "sha256": "b9a4ebddd0b2221d39d5ccbc2ad4b9af266b0537eb0f67204c7a487df193ca72"
+    },
+    {
+      "path": "datasets/data_manager_SMA.py",
+      "size": 9638,
+      "git_blob_sha1": "f09361e07ccbceffa023221c7d0dcea3b2fb854d",
+      "sha256": "f68b5a11e53fd38ec351068726114fb388a31a0e1ca866b556d276877c4d07c1"
+    },
+    {
+      "path": "datasets/data_manager_STARmap_PLUS.py",
+      "size": 6701,
+      "git_blob_sha1": "c76a24a0450757c5f9a317a31547b77fda6ca1c5",
+      "sha256": "e087812dbaa13a944d8759d6978fa38ca3ed43615a3b2a32c2f4ccbccb2ec12c"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1103,
+      "git_blob_sha1": "9703c92787c7680d396a2dd13a6c34497a4e42de",
+      "sha256": "86f70c4219b1aee0038d1a7b142e1bb53862db843c47c9052464121de14bad79"
+    },
+    {
+      "path": "model/attention.py",
+      "size": 3014,
+      "git_blob_sha1": "6b7b52e9a6df26ad95a3a519358038b9bb68d333",
+      "sha256": "ae67126eacb54ddb96528b7267d716c2f005eb2e5ac4a4082a3302715e25c436"
+    },
+    {
+      "path": "model/nicheTrans.py",
+      "size": 4527,
+      "git_blob_sha1": "be250811093da597a00de3e16ea4c4b192d0040b",
+      "sha256": "cb1b99fe5ae28aa852e290e6861a81072a7f7ecb16c5f306c953ddbbdeb56c60"
+    },
+    {
+      "path": "model/nicheTrans_attribution_SMA.py",
+      "size": 4506,
+      "git_blob_sha1": "50b51edeab5cce8a82995de7836cf944d036a403",
+      "sha256": "83fea6e7006ef02abeddbd4980f378a2e3bc2ac544baa6af24743cfaf5a01f8b"
+    },
+    {
+      "path": "model/nicheTrans_ct.py",
+      "size": 4846,
+      "git_blob_sha1": "391e5e7545ecb04eecf4849615dd46f621544139",
+      "sha256": "9eca14d3d1945f961db2a5b69397b7eaa426e379ba00370ea6066768ced27a80"
+    },
+    {
+      "path": "model/nicheTrans_ct_attribution_STARmap_PLUS.py",
+      "size": 4875,
+      "git_blob_sha1": "603f7d12db6c49e33b5330f1ea9f5ea47ecbeaa6",
+      "sha256": "e21cb9055c3b1409a7664b91213b2bdcdb74c6db8ea4d64d5624383e6dce8908"
+    },
+    {
+      "path": "model/nicheTrans_hd.py",
+      "size": 4310,
+      "git_blob_sha1": "c853680e8448bce66aa6e78e135ecf90ad4dab9e",
+      "sha256": "2bfd9cd5efb658ec321aca51f1597125b29dae2f4c303697cd83ef82dea3ae19"
+    },
+    {
+      "path": "model/nicheTrans_img.py",
+      "size": 3920,
+      "git_blob_sha1": "5f8de01387fe4bcf121e084554727567d4a03c3d",
+      "sha256": "f6b4aa60caef0fa8e1ce87ade85376b244ef1218320d6d439564475c46d38277"
+    },
+    {
+      "path": "overall.png",
+      "size": 822234,
+      "git_blob_sha1": "57a20f6a3b592b769c7a09f653d76439b806520d",
+      "sha256": "626c865c67ed3c9096f563af00a53ace452e0bcf01beb52c7364e5033a11dd94"
+    },
+    {
+      "path": "README.md",
+      "size": 4834,
+      "git_blob_sha1": "26bd5c918dec304d139b593e67663c2ef54cb901",
+      "sha256": "5ef981a23452079904eda7a7df77b8a4c3d4c34317b415d8ee1bf24a3812e81a"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 1326,
+      "git_blob_sha1": "364410f2b50584d88d1815530c5d7cfe3b411014",
+      "sha256": "a59875322b1057e004a98c888544dc822c2c8d0675cf7d201e0c06adb16ce425"
+    },
+    {
+      "path": "Tutorial_3.1__Train_NicheTrans_on_SMA_data.ipynb",
+      "size": 4166,
+      "git_blob_sha1": "c3e9f4e5609976e418cd95835f08762c92f77328",
+      "sha256": "ed5a4e831aeb1264b91c04141e676d96d3d3ba7398927a9ee9b796c7c715d22a"
+    },
+    {
+      "path": "Tutorial_3.2__Visualize_results.ipynb",
+      "size": 344834,
+      "git_blob_sha1": "b4282661bb15a20cf2a52261f570d814e0fbf5fa",
+      "sha256": "ec10fd74274520ee592465fe87b5c2850d036ec6b76a7a7fd4bc1c468a105963"
+    },
+    {
+      "path": "Tutorial_3.3__Attribution_analysis.ipynb",
+      "size": 116881,
+      "git_blob_sha1": "00783247aedeaa4b1d51eba5c1c1ab6001acac0d",
+      "sha256": "25dcfe1bb7bcd021fdbadd1b2f2a697ce1d7b2f079533a9006500b30f3c72890"
+    },
+    {
+      "path": "Tutorial_4.1__Train_NicheTrans_STAR_on_SMA_data.ipynb",
+      "size": 4174,
+      "git_blob_sha1": "93022c15299bbae53bc818283f4bddc16016016a",
+      "sha256": "d35620f9da939f9968de3784441655737c2e19dcfe1fa212f32d71d2fbcd1b14"
+    },
+    {
+      "path": "Tutorial_4.2__Visualize_results.ipynb",
+      "size": 347911,
+      "git_blob_sha1": "fe322f7d8ba1d30d61ebb6f5e68e5f2a22a30ee7",
+      "sha256": "7257752af09a806b3330775f8b06632738e5691b305018db54df6042137c817e"
+    },
+    {
+      "path": "Tutorial_5.1__Train_NicheTrans_on_STARmap_PLUS_data.ipynb",
+      "size": 4179,
+      "git_blob_sha1": "2285df5aa80b72c17921e59bd6469e38cf6aee25",
+      "sha256": "6084c3907a0b330c3fcee945d1972aadcd2894be71b290a332347b4aebff828f"
+    },
+    {
+      "path": "Tutorial_5.2__Visualize_results_on_AD_sample.ipynb",
+      "size": 743257,
+      "git_blob_sha1": "9619141565b49397e9a24cf7bde6d3ec06e67f35",
+      "sha256": "985869ed048f555518db3fd1accd860e1109d070210dd220bd087d66d68708fb"
+    },
+    {
+      "path": "Tutorial_5.3__Visualize_results_on_WT_sample.ipynb",
+      "size": 608789,
+      "git_blob_sha1": "7c45421226efab02823ba691e6a42449136eed1c",
+      "sha256": "fb652e47926e72a2db06efb285b20ce7a6a8c9575b74dcef96824e21fb8dc0e9"
+    },
+    {
+      "path": "Tutorial_6.1__Train_NicheTrans_STAR__on_STARmap_PLUS_data.ipynb",
+      "size": 4226,
+      "git_blob_sha1": "65ba9067fd6f0aa8ea9b294193a7d660d664170e",
+      "sha256": "023f560a5e23db0ada341282ba48ee1751335c375c74d05b631cb0a8eb873c8d"
+    },
+    {
+      "path": "Tutorial_6.2__Visualize_results_on_AD_sample.ipynb",
+      "size": 752489,
+      "git_blob_sha1": "a411a77d2837a202b0bca496531f4b052d3754d4",
+      "sha256": "d59275c50fcb32f989b211fa848bfd63786dcf3c0058f712f3e66321299e6b67"
+    },
+    {
+      "path": "Tutorial_6.3__Visualize_results_on_WT_sample.ipynb",
+      "size": 615522,
+      "git_blob_sha1": "4609fc0dc15a768aa548f666ea3fd0efb8291669",
+      "sha256": "6310ab614a4e13374798012be4e307218a2e80ed9ad776dd1beeeacb7819bf2d"
+    },
+    {
+      "path": "Tutorial_6.4__STARmap_PLUS_cell_type_attribution.ipynb",
+      "size": 47461,
+      "git_blob_sha1": "4b2a40b3235578bb0c2f870fcdff9938eb577f7d",
+      "sha256": "c91f5093eff2ee46df776970bf8b54c9146c953cbfe2f4101a25f78cc3c3c508"
+    },
+    {
+      "path": "Tutorial_6.5__STARmap_PLUS_input_gene_attribution.ipynb",
+      "size": 97198,
+      "git_blob_sha1": "d73c106c086669065b3a64d43305dc1181cba2ec",
+      "sha256": "358d63f3ddab487c582980e56a27b5b8aad2b9ca653d628e6b73c5d7ca720cec"
+    },
+    {
+      "path": "Tutorial_6.6__STARmap_PLUS_input_gene_attribution_niche.ipynb",
+      "size": 1276104,
+      "git_blob_sha1": "8799a60c47a07bc37569b4b05a97f2f48966cd78",
+      "sha256": "f0f53bf60951c2559cfc2b58b4e8d6ec52a1284b38ae362c6b6dc6e81681b377"
+    },
+    {
+      "path": "Tutorial_7.1__Train_NicheTrans_on_10x_Xenium_data.ipynb",
+      "size": 4179,
+      "git_blob_sha1": "27c477836d8febd946fd1daae29b1b1e43b8ee8f",
+      "sha256": "a1156b3cf302b040830170aad3bb1553b350810737a062ca7ee8932d75744512"
+    },
+    {
+      "path": "Tutorial_7.2__Visualize_results.ipynb",
+      "size": 706227,
+      "git_blob_sha1": "facfcb88d5386ca2e1605735a13f4a0c11df6a1e",
+      "sha256": "ca07d07658737293d284496f373f05b8cef934259c5dde6463bfeb34e59b19d6"
+    },
+    {
+      "path": "Tutorial_8.1__Train_NicheTrans_on_human_lymph_node_data.ipynb",
+      "size": 4160,
+      "git_blob_sha1": "a2c12c22a39a4e61c7dd270b216eedbb45a9744a",
+      "sha256": "5419663e3c5bf71fae38792b75594d2095ded95ae1b5e2440cd7e2377c2760d8"
+    },
+    {
+      "path": "Tutorial_8.2__Visualize_results.ipynb",
+      "size": 563547,
+      "git_blob_sha1": "3c6e5242bbf66a2405868e0c5a962415f3832ea4",
+      "sha256": "0ff818504b27d97f7d064ca5c0b816535159795845bed17501e1a9266fad53a3"
+    },
+    {
+      "path": "Tutorial_9.1__Train_&_test_NicheTrans_on_MISAR-seq(atac2rna).ipynb",
+      "size": 4205,
+      "git_blob_sha1": "2ebed5eaf86a31820dc7b1730c6609c621fc0023",
+      "sha256": "104bcf8ad95a5062e8e60c36e5dfbabf354b775bcb2bc8d201a83ddd21fcf0d4"
+    },
+    {
+      "path": "Tutorial_9.2__Train_&_test_NicheTrans_on_MISAR-seq(rna2atac).ipynb",
+      "size": 4247,
+      "git_blob_sha1": "2c80c09c640c97009d9e741bfe364eb1b2c83f28",
+      "sha256": "1876a49cdd9430715e4abd825a2be64eb30aa8613b691e9dd5412945b45d2406"
+    },
+    {
+      "path": "utils/evaluation.py",
+      "size": 2294,
+      "git_blob_sha1": "ebd243dbb99be8fa5d05a4062c0ca7329e0ea5ca",
+      "sha256": "513bfff7cda5119aec2772280dec174425ed528f32d68c7814d7e04f5e3eb86f"
+    },
+    {
+      "path": "utils/utils.py",
+      "size": 684,
+      "git_blob_sha1": "b4370d6256b002e7f9e30a0f1165a0058e9e0add",
+      "sha256": "7ee7bac54f41874e08441362b41d1dede059840b87dbf3264a03bc2c537e6089"
+    },
+    {
+      "path": "utils/utils_dataloader.py",
+      "size": 5118,
+      "git_blob_sha1": "f4cfb9fddcd98b1b36b7c6d7f1310f1a3d07813d",
+      "sha256": "48befcd70f1521198fb1b6c9e04be730ea89148e28e60e73bbba2b6820aa7dea"
+    },
+    {
+      "path": "utils/utils_training_breast_cancer.py",
+      "size": 2266,
+      "git_blob_sha1": "f69b7af3d38c38c82cb03e3ce7bff6ecc6cab330",
+      "sha256": "07b0b4e91a263166255b9addedb0f89834ceeebaeb4145ac9772b6f2865ec4bb"
+    },
+    {
+      "path": "utils/utils_training_embryonic_mouse_brain.py",
+      "size": 4539,
+      "git_blob_sha1": "53c0ba2ae96c2c92611fda6867217b1c02327d6d",
+      "sha256": "37fe4b422c3917ef3859f43d154d384344ef10acb809e87253e2952918fd3e58"
+    },
+    {
+      "path": "utils/utils_training_human_lymph_node.py",
+      "size": 2411,
+      "git_blob_sha1": "9b8b2c22357710379f45bd5f108389ab228258b7",
+      "sha256": "daab870b18324a6e1bb9794a85a1771ffba3002b0ff6079d7efd5cd2014973f9"
+    },
+    {
+      "path": "utils/utils_training_SMA.py",
+      "size": 2814,
+      "git_blob_sha1": "61987614be8f164e88d6d8157ed747258c57202d",
+      "sha256": "d3d2cd0f4483bf0d574d80cc0c939e88c4f8ecb5f599e41731690c837260c9c5"
+    },
+    {
+      "path": "utils/utils_training_STARmap_PLUS.py",
+      "size": 3439,
+      "git_blob_sha1": "414b966b66e40c46f83e38ee8a290ad5e14d8674",
+      "sha256": "89007e2ece90bcc33f56a31e204f3c9d50cebe6841419fd6f741c6bc150210c6"
+    }
+  ]
+}

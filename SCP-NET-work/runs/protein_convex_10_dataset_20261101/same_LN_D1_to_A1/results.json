@@ -1,0 +1,104 @@
+{
+  "model": "SCN-Pro",
+  "target": "A1_LN",
+  "sources": [
+    "D1_LN"
+  ],
+  "seed": 42,
+  "epochs": 20,
+  "architecture": {
+    "protein_specific_router": true,
+    "protein_aware_neighbour_attention": true,
+    "protein_specific_head": "vectorized 31 independent nonlinear heads",
+    "protein_embedding_dim": 32,
+    "router_rank": 32,
+    "slice_context": true,
+    "niche_canonicalization": true,
+    "context_adapter": true,
+    "context_pca_components": 32,
+    "context_rank": 8
+  },
+  "loss": {
+    "final_mse": 1.0,
+    "protein_rmse": 0.0,
+    "protein_pcc": 0.05,
+    "auxiliary_mse": 0.25
+  },
+  "selection": "mean PCC-Pro on source-only validation spots; outer target ADT opened only after checkpoint selection",
+  "checkpoint_selection": "source_validation",
+  "preprocessing": "frozen DGAT registry; Muon CLR axis=0",
+  "common_panel": {
+    "genes": 9384,
+    "proteins": [
+      "CD163",
+      "CR2",
+      "PCNA",
+      "VIM",
+      "KRT5",
+      "CD68",
+      "CEACAM8",
+      "PTPRC_1",
+      "HLA_DRA",
+      "PAX5",
+      "SDC1",
+      "PTPRC_2",
+      "CD8A",
+      "BCL2",
+      "CD19",
+      "PDCD1",
+      "ACTA2",
+      "FCGR3A",
+      "ITGAX",
+      "CXCR5",
+      "EPCAM",
+      "MS4A1",
+      "CD3E",
+      "CD14",
+      "CD40",
+      "PECAM1",
+      "CD4",
+      "ITGAM",
+      "CD27",
+      "CCR7",
+      "CD274"
+    ]
+  },
+  "source_split": {
+    "D1_LN": {
+      "fit": 2238,
+      "validation": 249
+    }
+  },
+  "audit": {
+    "D1_LN": {
+      "spots": 2487,
+      "neighbour_sha256": "3d5da01b852e11cc205bd0379bc85b1c714d1eb46a93795778ee4dce0b885d47",
+      "coordinate_scale": 1.4142135381698608
+    },
+    "A1_LN": {
+      "spots": 3293,
+      "neighbour_sha256": "1b522ec7ed3cf6ea7169911b3013edb1948bfd0bc30087c16c8b8a962e84c859",
+      "coordinate_scale": 1.4142135381698608
+    }
+  },
+  "slice_context_audit": {
+    "source_fitted_rna_pca": true,
+    "target_protein_used_for_checkpoint_selection": false,
+    "target_full_slice_rna_used": true,
+    "canonicalization_alpha": 0.12519584596157074
+  },
+  "n_parameters": 4633306,
+  "best_epoch": 15,
+  "best_selection_pcc_pro_mean": 0.6576083530822108,
+  "best_source_validation_pcc_pro_mean": 0.6576083530822108,
+  "target_source_selected": {
+    "pcc_pro_mean": 0.5467047739413476,
+    "pcc_spot_mean": 0.5617842537346381,
+    "spearman_pro_mean": 0.49018239694288035,
+    "spearman_spot_mean": 0.5006532246958626,
+    "rmse_global": 0.29995399713516235,
+    "mae_global": 0.18838979303836823
+  },
+  "target_source_selected_rmse_pro": 0.24843158789219394,
+  "wall_seconds": 1038993.046
+}

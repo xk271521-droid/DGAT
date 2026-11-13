@@ -1,0 +1,13 @@
+# Local data and generated research artifacts are intentionally not versioned.
+data/raw/
+data/processed/
+artifacts/
+
+# Python and macOS noise
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Never commit credentials or experiment-local secrets.
+.env
+*.pem

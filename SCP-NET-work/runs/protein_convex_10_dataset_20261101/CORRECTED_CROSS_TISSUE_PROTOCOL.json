@@ -1,0 +1,120 @@
+{
+  "protocol": "strict_group_holdout",
+  "jobs": [
+    {
+      "name": "cross_holdout_LN_A1_LN",
+      "target": "A1_LN",
+      "sources": [
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_LN_D1_LN",
+      "target": "D1_LN",
+      "sources": [
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Tonsil_A1_TNSL",
+      "target": "A1_TNSL",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Tonsil_D1_TNSL",
+      "target": "D1_TNSL",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Tonsil_HumanTonsil_10x",
+      "target": "HumanTonsil_10x",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Tonsil_HumanTonsil_AddOns_S1",
+      "target": "HumanTonsil_AddOns_S1",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "Breast_Cancer",
+        "PBC_PR_6837",
+        "PBC_PR_6835_5A",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Breast_Cancer_Breast_Cancer",
+      "target": "Breast_Cancer",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Breast_Cancer_PBC_PR_6837",
+      "target": "PBC_PR_6837",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "GBM"
+      ]
+    },
+    {
+      "name": "cross_holdout_Breast_Cancer_PBC_PR_6835_5A",
+      "target": "PBC_PR_6835_5A",
+      "sources": [
+        "A1_LN",
+        "D1_LN",
+        "A1_TNSL",
+        "D1_TNSL",
+        "HumanTonsil_10x",
+        "HumanTonsil_AddOns_S1",
+        "GBM"
+      ]
+    }
+  ]
+}

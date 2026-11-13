@@ -1,0 +1,117 @@
+{
+  "protocol": "strict_group_holdout_corrected",
+  "panel_genes": 9384,
+  "panel_proteins": 31,
+  "directions": [
+    {
+      "direction": "cross_holdout_Breast_Cancer_Breast_Cancer",
+      "target": "Breast_Cancer",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        4160,
+        31
+      ],
+      "truth_sha256": "2277de42ce7b03d285ba41b61bb03793ddd24ad743606f5626ee55322aaf45c1"
+    },
+    {
+      "direction": "cross_holdout_Breast_Cancer_PBC_PR_6835_5A",
+      "target": "PBC_PR_6835_5A",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        3243,
+        31
+      ],
+      "truth_sha256": "ad549bb1c86aa19319d985ee21cc9bec961ab64c2a55371d13f7d135b61d9dfc"
+    },
+    {
+      "direction": "cross_holdout_Breast_Cancer_PBC_PR_6837",
+      "target": "PBC_PR_6837",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        4850,
+        31
+      ],
+      "truth_sha256": "6af2312cec4408d2ea83646aaecbfab3fa2b6a31f0647281faccdcfacc6eecea"
+    },
+    {
+      "direction": "cross_holdout_GBM",
+      "target": "GBM",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        5637,
+        31
+      ],
+      "truth_sha256": "c55c86790ceecee035ce5dbed24ac75d9f9203d0303b9528d3a1da55c2f2ba27"
+    },
+    {
+      "direction": "cross_holdout_LN_A1_LN",
+      "target": "A1_LN",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        3293,
+        31
+      ],
+      "truth_sha256": "5129560280dfdcc1c33e054626355a2b07ae5b9f1f9b5ebc5ffbbcd57a09bff3"
+    },
+    {
+      "direction": "cross_holdout_LN_D1_LN",
+      "target": "D1_LN",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        2487,
+        31
+      ],
+      "truth_sha256": "37fb7ac46f2fc0de34d2bd9b364b420ede0578d31f8946c8f6096c83b7df96cf"
+    },
+    {
+      "direction": "cross_holdout_Tonsil_A1_TNSL",
+      "target": "A1_TNSL",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        4323,
+        31
+      ],
+      "truth_sha256": "af583ebc1667302ebee837bf81feb4ab00258ee8d8f01aff3fa5b7d23f8d0217"
+    },
+    {
+      "direction": "cross_holdout_Tonsil_D1_TNSL",
+      "target": "D1_TNSL",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        4482,
+        31
+      ],
+      "truth_sha256": "05e2fde1ac5476b475cd664f67f10d5e733332b7c73dca52178f6579ae27abd9"
+    },
+    {
+      "direction": "cross_holdout_Tonsil_HumanTonsil_10x",
+      "target": "HumanTonsil_10x",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        4191,
+        31
+      ],
+      "truth_sha256": "3772928f2d871ca8058efd5d89b56f5026adb421ef2e109249b9f37bc6f125b2"
+    },
+    {
+      "direction": "cross_holdout_Tonsil_HumanTonsil_AddOns_S1",
+      "target": "HumanTonsil_AddOns_S1",
+      "prediction_file": "target_source_selected_predictions.npy",
+      "truth_file": "target_source_selected_truth.npy",
+      "shape": [
+        4311,
+        31
+      ],
+      "truth_sha256": "320813979e37bd7c7b49d40d4c2c3816eee6b6f8ca6fdae18941d9dc2851216e"
+    }
+  ]
+}

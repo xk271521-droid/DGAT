@@ -1,0 +1,191 @@
+{
+  "repository": "https://github.com/VitaIntelli-CQU/SPINE",
+  "commit": "961d765e817573222a18d0cc135d38aadce03c09",
+  "branch": "main",
+  "commit_updated": "2026-09-15T04:14:39Z",
+  "download_method": "official GitHub codeload tarball at pinned commit",
+  "archive": "E:/DGAT/upstream/archives/SPINE_961d765e817573222a18d0cc135d38aadce03c09.tar.gz",
+  "archive_sha256": "c464a2e196a6c35f3a8ddeae7c7f38a3c609bb68a7cd0e14bcc48a4d9db299ad",
+  "file_count": 35,
+  "total_bytes": 865139,
+  "author_files_modified": false,
+  "dependencies_installed": false,
+  "author_scripts_executed": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 212,
+      "sha256": "33d00e6c66e2927dd410c0bf8fc427a5b3d9f7cced67abd750b24b734872a87a"
+    },
+    {
+      "path": "model.png",
+      "bytes": 749599,
+      "sha256": "57d3899bf53d411847083ee0a20d333c49babb0af5b9767a2c9b73ad3e0089a8"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 94,
+      "sha256": "7f4d920bc75d4e2c9f5e73f3215b4a4bcc3f52f4f641de3a2a28d8b6b3d03b9f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2004,
+      "sha256": "33c047cf0546907e3086ed5fd1ba588fc19f895e29e1d474d34734a7a8d33a70"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 236,
+      "sha256": "3f4fad8bc6901cc98240b823ed02ff44fdb5248c3de031ead90093b53cc8083a"
+    },
+    {
+      "path": "scripts/demo.ipynb",
+      "bytes": 7050,
+      "sha256": "dd07a0f0ac0c36d662617e2d0959359d575e84714286634596f39dc52c56d964"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 256,
+      "sha256": "868f6e958e9314431c6e0ff4a6c7a53ad3b918737eed8a858be25da40032aa0f"
+    },
+    {
+      "path": "spine/__init__.py",
+      "bytes": 159,
+      "sha256": "45d7496bdf5a9673d1b55f1d494ab0fedba9464a806ba1564b8247f9c9cc6b8f"
+    },
+    {
+      "path": "spine/app/__init__.py",
+      "bytes": 41,
+      "sha256": "bb76ce3f42aead7fe3ea677b38318373f1b8afc3190e8b5146785620a157ce01"
+    },
+    {
+      "path": "spine/app/flow/__init__.py",
+      "bytes": 54,
+      "sha256": "9cf78dc5c2979a56577d1b38e15b62ac365999c8a535be50c0131271e291d519"
+    },
+    {
+      "path": "spine/app/flow/test.py",
+      "bytes": 4636,
+      "sha256": "cca6872f35ed13e5e00edb3019ab356c32bbdd354c6c53381d15dc109ee88513"
+    },
+    {
+      "path": "spine/app/flow/train_rna_to_protein.py",
+      "bytes": 17790,
+      "sha256": "44345fbc0c83bdba066a28083a4f90e3d0b72f5ee53390f272322fe136e60870"
+    },
+    {
+      "path": "spine/app/preprocessing/__init__.py",
+      "bytes": 50,
+      "sha256": "8f185c2666e803374ec3cc1b837079fdde41ca7789193810d228da0c62a58fc5"
+    },
+    {
+      "path": "spine/app/preprocessing/preprocessing.py",
+      "bytes": 12368,
+      "sha256": "98797dd6eb2ae19ca14453eb064ba05b992c1c135f16a28f1ff43361c2642700"
+    },
+    {
+      "path": "spine/app/preprocessing/README.md",
+      "bytes": 927,
+      "sha256": "89ceb56de1dca481cfcfd25caebfcdf467b93e5e5792dc3d071e053f02c5ee40"
+    },
+    {
+      "path": "spine/data/__init__.py",
+      "bytes": 43,
+      "sha256": "62465b59c5e11a5fa22459ebf728d65b3be7c9d8663baddf100831eec7c3c53e"
+    },
+    {
+      "path": "spine/data/dataset.py",
+      "bytes": 9445,
+      "sha256": "e006e51236dd5a63a8813f4b6938ec4c273b188711e547d1d6d4c21dd894fc97"
+    },
+    {
+      "path": "spine/data/distribution_utils.py",
+      "bytes": 1134,
+      "sha256": "4392ad509ae4670f3ecd8a4030561e7fc18c683eeced376c54198a041d1b5ea1"
+    },
+    {
+      "path": "spine/data/normalize_utils.py",
+      "bytes": 3690,
+      "sha256": "7efed240e41d83e93da4b352847fc6b6c45877804ac875fe5c35a10a3907ce27"
+    },
+    {
+      "path": "spine/data/sampling_utils.py",
+      "bytes": 1564,
+      "sha256": "92d6e52ce6a3544f67903fbb86b68e2f706fa520f6475201d68210291de29530"
+    },
+    {
+      "path": "spine/flow/__init__.py",
+      "bytes": 38,
+      "sha256": "595eb008c7c77e513342189f364f162f28d9fd1e9e22b07e3b2640a42df12106"
+    },
+    {
+      "path": "spine/flow/interpolant.py",
+      "bytes": 1321,
+      "sha256": "5ec0b18d11de3a8dd328a81ee105958bfb26351396501766da9954b888163218"
+    },
+    {
+      "path": "spine/flow/noise.py",
+      "bytes": 1239,
+      "sha256": "71b874a20daeaeb3b727be1411a1a025b24a68604599dca7859b13402373c6c0"
+    },
+    {
+      "path": "spine/io_utils/__init__.py",
+      "bytes": 49,
+      "sha256": "1a45be8f4585ab45ba7d254e2681f805ee6d30a2d8b75a3f9aa58c96830cff9e"
+    },
+    {
+      "path": "spine/io_utils/file_utils.py",
+      "bytes": 3028,
+      "sha256": "357212a6087566cd8d150f206251bf3c55b14a975b251503bcdb8ced3112b4b6"
+    },
+    {
+      "path": "spine/io_utils/st_dataset.py",
+      "bytes": 1350,
+      "sha256": "e2419b2ea0768294bbe2ff356ebc4f6ed3301d196d5423b21df823bb8514459f"
+    },
+    {
+      "path": "spine/io_utils/utils.py",
+      "bytes": 2848,
+      "sha256": "8c90f8d03a172f93f53a2ca2246f2ba0e236e4183c28a742bf9d68bf939d34be"
+    },
+    {
+      "path": "spine/model/__init__.py",
+      "bytes": 34,
+      "sha256": "f6f59076133f975c5e5888a8ab42c7479c0f1ef9dea180afcac24ad813a34352"
+    },
+    {
+      "path": "spine/model/config.py",
+      "bytes": 1449,
+      "sha256": "7ba527d862bf31b339d97d0b729c93160002420c2a0fd7c2d537ad6990a16e80"
+    },
+    {
+      "path": "spine/model/denoiser.py",
+      "bytes": 8929,
+      "sha256": "54a6a3acae99f1231a45bfa3c831783af1e819c56e7005ce0629334106758acc"
+    },
+    {
+      "path": "spine/model/fa.py",
+      "bytes": 2070,
+      "sha256": "d92af587fe8535e4fec827e1572210bd0f8f92e52d2edd39e3f218f5e115e372"
+    },
+    {
+      "path": "spine/model/transformer.py",
+      "bytes": 26994,
+      "sha256": "27f8ad8285517d5d3f7a5d1196931c90f6cfc671b5094077116e8d2226552b8c"
+    },
+    {
+      "path": "spine/utils/__init__.py",
+      "bytes": 20,
+      "sha256": "a46f983d51b4809209eace31700cfd4bf0a7531a54733df7c25f5e3544a0c469"
+    },
+    {
+      "path": "spine/utils/eval_per_cell_pcc.py",
+      "bytes": 2547,
+      "sha256": "8d3f5f2fdcdbb14d4c5e5c624f887e572702034fb3de59cad29dfd69afa705f2"
+    },
+    {
+      "path": "spine/utils/utils.py",
+      "bytes": 1871,
+      "sha256": "c2fe2d66b1fa2c010f3da6030f8088d7469cf6e80457b9ab6c1b95e5fddfdb1f"
+    }
+  ]
+}

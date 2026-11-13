@@ -1,0 +1,139 @@
+{
+  "direction": "same_LN_A1_to_D1",
+  "target": "D1_LN",
+  "sources": [
+    "A1_LN"
+  ],
+  "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_LN_A1_to_D1\\best_source_validation.pth",
+  "best_epoch": 18,
+  "source_validation_only_selection": true,
+  "target_adt_opened_after_selection": true,
+  "common_panel": {
+    "genes": 9384,
+    "proteins": [
+      "CD163",
+      "CR2",
+      "PCNA",
+      "VIM",
+      "KRT5",
+      "CD68",
+      "CEACAM8",
+      "PTPRC_1",
+      "HLA_DRA",
+      "PAX5",
+      "SDC1",
+      "PTPRC_2",
+      "CD8A",
+      "BCL2",
+      "CD19",
+      "PDCD1",
+      "ACTA2",
+      "FCGR3A",
+      "ITGAX",
+      "CXCR5",
+      "EPCAM",
+      "MS4A1",
+      "CD3E",
+      "CD14",
+      "CD40",
+      "PECAM1",
+      "CD4",
+      "ITGAM",
+      "CD27",
+      "CCR7",
+      "CD274"
+    ]
+  },
+  "rho_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "lambda_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "selected_rho": 0.0,
+  "selected_lambda_by_protein": {
+    "CD163": 0.5,
+    "CR2": 0.5,
+    "PCNA": 0.5,
+    "VIM": 0.4,
+    "KRT5": 0.5,
+    "CD68": 0.5,
+    "CEACAM8": 0.5,
+    "PTPRC_1": 0.5,
+    "HLA_DRA": 0.5,
+    "PAX5": 0.5,
+    "SDC1": 0.5,
+    "PTPRC_2": 0.5,
+    "CD8A": 0.4,
+    "BCL2": 0.5,
+    "CD19": 0.4,
+    "PDCD1": 0.5,
+    "ACTA2": 0.4,
+    "FCGR3A": 0.5,
+    "ITGAX": 0.5,
+    "CXCR5": 0.4,
+    "EPCAM": 0.5,
+    "MS4A1": 0.5,
+    "CD3E": 0.3,
+    "CD14": 0.5,
+    "CD40": 0.5,
+    "PECAM1": 0.5,
+    "CD4": 0.5,
+    "ITGAM": 0.5,
+    "CD27": 0.5,
+    "CCR7": 0.5,
+    "CD274": 0.5
+  },
+  "source_validation_macro_pcc_by_rho": [
+    {
+      "rho": 0.0,
+      "source_validation_macro_pcc": 0.6771162390749723
+    },
+    {
+      "rho": 0.25,
+      "source_validation_macro_pcc": 0.6765224342600216
+    },
+    {
+      "rho": 0.5,
+      "source_validation_macro_pcc": 0.675867199717009
+    },
+    {
+      "rho": 0.75,
+      "source_validation_macro_pcc": 0.6751603996326343
+    },
+    {
+      "rho": 1.0,
+      "source_validation_macro_pcc": 0.6743972328005641
+    }
+  ],
+  "baseline_reconstruction_max_abs_diff": 4.76837158203125e-07,
+  "baseline_metrics": {
+    "pcc_pro_mean": 0.4771586824809351,
+    "pcc_spot_mean": 0.5143898439798265,
+    "spearman_pro_mean": 0.41648409900210687,
+    "spearman_spot_mean": 0.46171078394515197,
+    "rmse_global": 0.2829478979110718,
+    "mae_global": 0.18428245186805725
+  },
+  "calibrated_metrics": {
+    "pcc_pro_mean": 0.5226684883236885,
+    "pcc_spot_mean": 0.5777883366353033,
+    "spearman_pro_mean": 0.463701469132636,
+    "spearman_spot_mean": 0.5046114242294871,
+    "rmse_global": 0.25038209557533264,
+    "mae_global": 0.16577962040901184
+  },
+  "prediction_file": "rna_calibrated_predictions.npy",
+  "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\protein_convex_10_dataset_20261101\\same_LN_A1_to_D1\\target_source_selected_truth.npy",
+  "calibrated_rmse_pro": 0.21463761454628355,
+  "calibrated_mae_pro": 0.16577961920730527
+}

@@ -1,0 +1,38 @@
+{
+  "name": "cross_holdout_Breast_Cancer",
+  "source_sections": [
+    "A1_LN",
+    "D1_LN",
+    "A1_TNSL",
+    "D1_TNSL",
+    "HumanTonsil_10x",
+    "HumanTonsil_AddOns_S1",
+    "GBM"
+  ],
+  "targets": [
+    "Breast_Cancer",
+    "PBC_PR_6837",
+    "PBC_PR_6835_5A"
+  ],
+  "train_sample_ids": [
+    "A1_LN__fit",
+    "D1_LN__fit",
+    "A1_TNSL__fit",
+    "D1_TNSL__fit",
+    "HumanTonsil_10x__fit",
+    "HumanTonsil_AddOns_S1__fit",
+    "GBM__fit"
+  ],
+  "validation_sample_ids": [
+    "A1_LN__val",
+    "D1_LN__val",
+    "A1_TNSL__val",
+    "D1_TNSL__val",
+    "HumanTonsil_10x__val",
+    "HumanTonsil_AddOns_S1__val",
+    "GBM__val"
+  ],
+  "genes": 9384,
+  "proteins": 31,
+  "source_validation_ratio": 0.1
+}

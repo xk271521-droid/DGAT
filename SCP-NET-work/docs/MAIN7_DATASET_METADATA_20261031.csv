@@ -1,0 +1,8 @@
+dataset,tissue_category,patient_sample,platform,raw_spots,post_qc_spots,raw_adt_features,post_qc_adt_features,local_evidence,grouping_status
+A1_LN,Lymph node,Not recorded in local manifest,Exact platform pending,3484,3293,31,31,"Registry says 2 LN; raw H5AD has gene_ids/feature_types/genome","Same LN category as D1_LN; patient/platform pending"
+D1_LN,Lymph node,Not recorded in local manifest,Exact platform pending,3359,2487,31,31,"Registry says 2 LN; raw H5AD has gene_ids/feature_types/genome","Same LN category as A1_LN; patient/platform pending"
+A1_TNSL,Tonsil,Not recorded in local manifest,Exact platform pending,4337,4323,35,31,"Registry groups TNSL under 4 Tonsil; raw H5AD uses feature_id/feature_type","Tonsil category; platform/patient pending"
+D1_TNSL,Tonsil,Not recorded in local manifest,Exact platform pending,4519,4482,35,31,"Registry groups TNSL under 4 Tonsil; raw H5AD uses feature_id/feature_type","Tonsil category; platform/patient pending"
+HumanTonsil_10x,Tonsil,Not recorded in local manifest,10x indicated by dataset name,4194,4191,35,31,"Registry groups under 4 Tonsil; name contains 10x","Tonsil category; direct pooling requires platform check"
+HumanTonsil_AddOns_S1,Tonsil,Not recorded in local manifest,AddOns_S1 indicated by dataset name,4313,4311,41,35,"Registry groups under 4 Tonsil; raw ADT has 41 before harmonization","Tonsil category; direct pooling requires platform check"
+Breast_Cancer,Breast cancer,Not recorded in local manifest,CytAssist FFPE Protein Expression,4169,4160,35,31,"Raw registry points to CytAssist FFPE source","Singleton Breast category"

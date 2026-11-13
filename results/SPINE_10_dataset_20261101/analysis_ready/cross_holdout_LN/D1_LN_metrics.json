@@ -1,0 +1,135 @@
+{
+  "pearson_corrs": [
+    {
+      "name": "CD163",
+      "pearson_corr": 0.19337262213230133
+    },
+    {
+      "name": "CR2",
+      "pearson_corr": 0.25821489095687866
+    },
+    {
+      "name": "PCNA",
+      "pearson_corr": 0.0004148219886701554
+    },
+    {
+      "name": "VIM",
+      "pearson_corr": 0.03465704992413521
+    },
+    {
+      "name": "KRT5",
+      "pearson_corr": -0.02668367326259613
+    },
+    {
+      "name": "CD68",
+      "pearson_corr": 0.32062429189682007
+    },
+    {
+      "name": "CEACAM8",
+      "pearson_corr": 0.31330159306526184
+    },
+    {
+      "name": "PTPRC_1",
+      "pearson_corr": 0.10401643812656403
+    },
+    {
+      "name": "HLA_DRA",
+      "pearson_corr": 0.5082828998565674
+    },
+    {
+      "name": "PAX5",
+      "pearson_corr": 0.367988258600235
+    },
+    {
+      "name": "SDC1",
+      "pearson_corr": 0.008197279646992683
+    },
+    {
+      "name": "PTPRC_2",
+      "pearson_corr": 0.39012011885643005
+    },
+    {
+      "name": "CD8A",
+      "pearson_corr": 0.3882204592227936
+    },
+    {
+      "name": "BCL2",
+      "pearson_corr": 0.24362890422344208
+    },
+    {
+      "name": "CD19",
+      "pearson_corr": 0.10937431454658508
+    },
+    {
+      "name": "PDCD1",
+      "pearson_corr": 0.4439444839954376
+    },
+    {
+      "name": "ACTA2",
+      "pearson_corr": 0.4374544620513916
+    },
+    {
+      "name": "FCGR3A",
+      "pearson_corr": 0.07255896180868149
+    },
+    {
+      "name": "ITGAX",
+      "pearson_corr": 0.3803631067276001
+    },
+    {
+      "name": "CXCR5",
+      "pearson_corr": 0.44381386041641235
+    },
+    {
+      "name": "EPCAM",
+      "pearson_corr": -0.0351828970015049
+    },
+    {
+      "name": "MS4A1",
+      "pearson_corr": 0.27713820338249207
+    },
+    {
+      "name": "CD3E",
+      "pearson_corr": 0.6534537672996521
+    },
+    {
+      "name": "CD14",
+      "pearson_corr": 0.019306359812617302
+    },
+    {
+      "name": "CD40",
+      "pearson_corr": 0.11461484432220459
+    },
+    {
+      "name": "PECAM1",
+      "pearson_corr": 0.22477920353412628
+    },
+    {
+      "name": "CD4",
+      "pearson_corr": 0.2092878222465515
+    },
+    {
+      "name": "ITGAM",
+      "pearson_corr": 0.13642245531082153
+    },
+    {
+      "name": "CD27",
+      "pearson_corr": 0.045953646302223206
+    },
+    {
+      "name": "CCR7",
+      "pearson_corr": 0.49097394943237305
+    },
+    {
+      "name": "CD274",
+      "pearson_corr": 0.1810581088066101
+    }
+  ],
+  "pearson_mean": 0.23579584062099457,
+  "pearson_std": 0.18005697429180145,
+  "mse": 0.10712215304374695,
+  "mae": 0.2101467400789261,
+  "mse_mean": 0.10712215046007786,
+  "mae_mean": 0.21014675233633287,
+  "n_test": 2487
+}

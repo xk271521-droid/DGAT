@@ -1,0 +1,33 @@
+{
+  "整理日期": "2026-11-02",
+  "protocol": {
+    "dataset_count": 10,
+    "common_rna_genes": 9384,
+    "common_adt_proteins": 31,
+    "same_tissue_directions": 8,
+    "cross_tissue_holdout_groups": 4,
+    "expected_targets_per_model": 18,
+    "final_prediction_and_truth_saved": true
+  },
+  "models": [
+    {
+      "name": "ProteinConvex + Strict RNA",
+      "direction_count": 12,
+      "target_count": 18,
+      "root": "SCP-NET-work/runs/protein_convex_10_dataset_20261101"
+    },
+    {
+      "name": "NicheTrans",
+      "direction_count": 12,
+      "target_count": 18,
+      "root": "SCP-NET-work/runs/nichetrans_10_dataset_20261101_fixed_panel"
+    },
+    {
+      "name": "DPAS-Graph",
+      "direction_count": 12,
+      "target_count": 18,
+      "root": "SCP-NET-work/runs/dpas_graph_10_dataset_20261101_all_results"
+    }
+  ],
+  "comparison_workbook": "comparison/three_model_comparison_20261102.xlsx"
+}

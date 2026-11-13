@@ -1,0 +1,147 @@
+{
+  "direction": "cross_holdout_Breast_Cancer_PBC_PR_6837",
+  "target": "PBC_PR_6837",
+  "sources": [
+    "A1_LN",
+    "D1_LN",
+    "A1_TNSL",
+    "D1_TNSL",
+    "HumanTonsil_10x",
+    "HumanTonsil_AddOns_S1",
+    "GBM"
+  ],
+  "checkpoint": "E:\\DGAT\\SCP-NET-work\\runs\\relative_roughness_gated_runs\\cross_holdout_Breast_Cancer_PBC_PR_6837\\best_source_validation.pth",
+  "best_epoch": 1,
+  "source_validation_only_selection": true,
+  "target_adt_opened_after_selection": true,
+  "common_panel": {
+    "genes": 9384,
+    "proteins": [
+      "CD163",
+      "CR2",
+      "PCNA",
+      "VIM",
+      "KRT5",
+      "CD68",
+      "CEACAM8",
+      "PTPRC_1",
+      "HLA_DRA",
+      "PAX5",
+      "SDC1",
+      "PTPRC_2",
+      "CD8A",
+      "BCL2",
+      "CD19",
+      "PDCD1",
+      "ACTA2",
+      "FCGR3A",
+      "ITGAX",
+      "CXCR5",
+      "EPCAM",
+      "MS4A1",
+      "CD3E",
+      "CD14",
+      "CD40",
+      "PECAM1",
+      "CD4",
+      "ITGAM",
+      "CD27",
+      "CCR7",
+      "CD274"
+    ]
+  },
+  "rho_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "lambda_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "selected_rho": 0.0,
+  "selected_lambda_by_protein": {
+    "CD163": 0.5,
+    "CR2": 0.1,
+    "PCNA": 0.5,
+    "VIM": 0.5,
+    "KRT5": 0.5,
+    "CD68": 0.3,
+    "CEACAM8": 0.4,
+    "PTPRC_1": 0.5,
+    "HLA_DRA": 0.5,
+    "PAX5": 0.3,
+    "SDC1": 0.5,
+    "PTPRC_2": 0.0,
+    "CD8A": 0.2,
+    "BCL2": 0.4,
+    "CD19": 0.5,
+    "PDCD1": 0.1,
+    "ACTA2": 0.2,
+    "FCGR3A": 0.5,
+    "ITGAX": 0.5,
+    "CXCR5": 0.5,
+    "EPCAM": 0.5,
+    "MS4A1": 0.5,
+    "CD3E": 0.1,
+    "CD14": 0.5,
+    "CD40": 0.3,
+    "PECAM1": 0.3,
+    "CD4": 0.4,
+    "ITGAM": 0.3,
+    "CD27": 0.5,
+    "CCR7": 0.2,
+    "CD274": 0.3
+  },
+  "source_validation_macro_pcc_by_rho": [
+    {
+      "rho": 0.0,
+      "source_validation_macro_pcc": 0.6645009375525496
+    },
+    {
+      "rho": 0.25,
+      "source_validation_macro_pcc": 0.6644437211610155
+    },
+    {
+      "rho": 0.5,
+      "source_validation_macro_pcc": 0.6643146359403983
+    },
+    {
+      "rho": 0.75,
+      "source_validation_macro_pcc": 0.6641178435090278
+    },
+    {
+      "rho": 1.0,
+      "source_validation_macro_pcc": 0.6638615368167653
+    }
+  ],
+  "baseline_reconstruction_max_abs_diff": 7.152557373046875e-07,
+  "baseline_metrics": {
+    "pcc_pro_mean": 0.2879582388672016,
+    "pcc_spot_mean": 0.19009844713118412,
+    "spearman_pro_mean": 0.25970080909174825,
+    "spearman_spot_mean": 0.19486372372927632,
+    "rmse_global": 0.2623143196105957,
+    "mae_global": 0.17091859877109528
+  },
+  "calibrated_metrics": {
+    "pcc_pro_mean": 0.2900749448209911,
+    "pcc_spot_mean": 0.19688440152266248,
+    "spearman_pro_mean": 0.26059989042335624,
+    "spearman_spot_mean": 0.20308859711788355,
+    "rmse_global": 0.24508172273635864,
+    "mae_global": 0.161360502243042
+  },
+  "baseline_rmse_pro": 0.2246923840815021,
+  "baseline_mae_pro": 0.1709186146336217,
+  "calibrated_rmse_pro": 0.21403695186299662,
+  "calibrated_mae_pro": 0.16136048614017426,
+  "prediction_file": "rna_calibrated_predictions.npy",
+  "truth_file": "E:\\DGAT\\SCP-NET-work\\runs\\relative_roughness_gated_runs\\cross_holdout_Breast_Cancer_PBC_PR_6837\\target_source_selected_truth.npy"
+}
